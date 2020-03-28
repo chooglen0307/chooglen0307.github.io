@@ -1,778 +1,998 @@
 <!DOCTYPE html>
-<!-- saved from url=(0032)http://localhost:1313/posts/xxx/ -->
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Xxx _ 科技机场_files/livereload.js.下载" data-no-instant="" defer=""></script>
-  
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp">
-  <meta name="author" content="Covey.机场">
-  
-  
-  
-  <link rel="prev" href="http://localhost:1313/posts/creating-a-new-theme/">
-  
-  <link rel="canonical" href="http://localhost:1313/posts/xxx/">
-  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-  <link rel="manifest" href="http://localhost:1313/site.webmanifest">
-  <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>Xxx | 科技机场</title>
-  <meta name="title" content="Xxx | 科技机场">
-    
-  
-  <link rel="stylesheet" href="./Xxx _ 科技机场_files/iconfont.css">
-  <link rel="stylesheet" href="./Xxx _ 科技机场_files/main.min.css">
+<html class="theme-next muse use-motion" lang="zh-CN">
 
+<head>
+    <meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
+    <meta name="theme-color" content="#222">
+    <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+    <meta name="google-site-verification" content="sDeZZSmv4NPbU3sXi1IL5l8PiZt1wVqR5EKUsxOjruY">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
+    <link href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+    <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+    <script id="hexo.configurations"
+        type="b95a22166afab536b84b6e65-text/javascript">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"6.6.0",sidebar:{position:"left",display:"hide",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!0,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script>
+    <meta name="description"
+        content="不需要制作安装盘！教你在 MacOS 系统下安装 High Sierra 系统到另一个分区此方法不支持APFS分区。 只有HFS分区才能通过此安装 High Sierra 。 而且，您还需要一个 GUID 分区表来安装它。我无法通过我的安装 USB 启动 macOS High Sierra 安装程序。 尝试了很多方法，但没有一个实际上使其启动，所以我发现一种新的方式通过我现在使用的实际引导的 m">
+    <meta name="keywords" content="High Sierra,安装">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="不需要制作安装盘！教你在MacOS系统下安装High Sierra系统到另一个分区">
+    <meta property="og:url"
+        content="https://blog.daliansky.net/Do-not-need-to-make-installation-disk-Teach-you-to-install-the-High-Sierra-system-on-another-MacOS-system-to-another-partition.html">
+    <meta property="og:site_name" content="黑果小兵的部落阁">
+    <meta property="og:description"
+        content="不需要制作安装盘！教你在 MacOS 系统下安装 High Sierra 系统到另一个分区此方法不支持APFS分区。 只有HFS分区才能通过此安装 High Sierra 。 而且，您还需要一个 GUID 分区表来安装它。我无法通过我的安装 USB 启动 macOS High Sierra 安装程序。 尝试了很多方法，但没有一个实际上使其启动，所以我发现一种新的方式通过我现在使用的实际引导的 m">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:updated_time" content="2017-08-28T03:08:02.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="不需要制作安装盘！教你在MacOS系统下安装High Sierra系统到另一个分区">
+    <meta name="twitter:description"
+        content="不需要制作安装盘！教你在 MacOS 系统下安装 High Sierra 系统到另一个分区此方法不支持APFS分区。 只有HFS分区才能通过此安装 High Sierra 。 而且，您还需要一个 GUID 分区表来安装它。我无法通过我的安装 USB 启动 macOS High Sierra 安装程序。 尝试了很多方法，但没有一个实际上使其启动，所以我发现一种新的方式通过我现在使用的实际引导的 m">
+    <link rel="alternate" href="/atom.xml" title="黑果小兵的部落阁" type="application/atom+xml">
+    <link rel="canonical"
+        href="https://blog.daliansky.net/Do-not-need-to-make-installation-disk-Teach-you-to-install-the-High-Sierra-system-on-another-MacOS-system-to-another-partition.html">
+    <script id="page.configurations" type="b95a22166afab536b84b6e65-text/javascript">CONFIG.page={sidebar:""}</script>
+    <title>不需要制作安装盘！教你在MacOS系统下安装High Sierra系统到另一个分区 | 黑果小兵的部落阁</title><noscript>
+        <style>
+            .sidebar-inner,
+            .use-motion .brand,
+            .use-motion .collection-title,
+            .use-motion .comments,
+            .use-motion .menu-item,
+            .use-motion .motion-element,
+            .use-motion .pagination,
+            .use-motion .post-block,
+            .use-motion .post-body,
+            .use-motion .post-header {
+                opacity: initial
+            }
 
-  
-  
- 
+            .use-motion .logo,
+            .use-motion .site-subtitle,
+            .use-motion .site-title {
+                opacity: initial;
+                top: initial
+            }
 
-<script type="application/ld+json">
- "@context" : "http://schema.org",
-    "@type" : "BlogPosting",
-    "mainEntityOfPage": {
-         "@type": "WebPage",
-         "@id": "http:\/\/localhost:1313\/"
-    },
-    "articleSection" : "posts",
-    "name" : "Xxx",
-    "headline" : "Xxx",
-    "description" : "Hackintool(原Intel FB-Patcher)使用教程及插入姿势 2018-09-23 | 2019-12-30\n| 教程\n|\n276893\n12k | 22 分钟\n警告 Hackintool 不是一个让你无脑使用的自动化补丁工具。在使用它之前，你需要一定的知识储备. 请您务必在使用这个工具之前阅读 Intel Framebuffer patching using WhateverGreen（英文）! 和 Whatevergreen的中文官方文档。\n功能  支持 Sandy Bridge, Ivy Bridge, Haswell, Broadwell, Skylake, KabyLake, Coffee Lake, Cannon Lake, Ice Lake 几乎所有的平台 修补核显输出接口 创建显存大小修改补丁 EDID 注入 检测自动修补程序创建的变化 创建 Clover 补丁，支持 hex，base64 或 Devices\/Properties 等三种格式 显示原生GPU和型号标识 显示和编辑内存信息，如缓冲帧，显存，Cursor 等 弹出一些项目的提示信息（Tool tips） 直接读取已加载生效的xxxFramebuffer kext的数据 文件 ▸ 打开通过 Debug 版本的 WhatEverGreen.kext 的 -igfxdump 引导标志生成的缓冲帧文件 文件 ▸ 导出 ▸ Clover Config.",
-    "inLanguage" : "en-us",
-    "author" : "Covey.机场",
-    "creator" : "Covey.机场",
-    "publisher": "Covey.机场",
-    "accountablePerson" : "Covey.机场",
-    "copyrightHolder" : "Covey.机场",
-    "copyrightYear" : "2020",
-    "datePublished": "2020-03-27 13:46:57 \x2b0800 CST",
-    "dateModified" : "2020-03-27 13:46:57 \x2b0800 CST",
-    "url" : "http:\/\/localhost:1313\/posts\/xxx\/",
-    "wordCount" : "1601",
-    "keywords" : [  "科技机场"]
-}
-</script>
+            .use-motion .logo-line-before i {
+                left: initial
+            }
 
-<style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="./Xxx _ 科技机场_files/fundebug.1.9.0.min.js.下载" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head>
+            .use-motion .logo-line-after i {
+                right: initial
+            }
+        </style>
+    </noscript></head>
 
-  
-
-
-  <body class="">
-    <div class="wrapper">
-        <nav class="navbar">
-    <div class="container">
-        <div class="navbar-header header-logo">
-        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://localhost:1313/">科技机场</a>
-        </div>
-        <div class="menu navbar-right">
-                
-                
-                <a class="menu-item" href="http://localhost:1313/posts/" title="">博客</a>
-                
-                <a class="menu-item" href="http://localhost:1313/categories/" title="">分类</a>
-                
-                <a class="menu-item" href="http://localhost:1313/tags/" title="">标签</a>
-                
-                <a class="menu-item" href="http://localhost:1313/about/" title="">关于</a>
-                
-                <a class="menu-item" href="http://localhost:1313/search/" title="">搜索</a>
-                
-                <a class="menu-item" href="http://localhost:1313/about/" title="About Hugo">About Hugo</a>
-                
-        </div>
-    </div>
-</nav>
-<nav class="navbar-mobile" id="nav-mobile" style="display: none">
-     <div class="
-     ">
-        <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://localhost:1313/">科技机场</a></div>
-            <div class="menu-toggle">
-                <span></span><span></span><span></span>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+    <div class="container sidebar-position-left page-post-detail">
+        <div class="headband"></div>
+        <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+            <div class="header-inner">
+                <div class="site-brand-wrapper">
+                    <div class="site-meta">
+                        <div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span
+                                    class="logo-line-before"><i></i></span> <span class="site-title">黑果小兵的部落阁</span>
+                                <span class="logo-line-after"><i></i></span></a></div>
+                        <p class="site-subtitle">Hackintosh安装镜像、教程及经验分享</p>
+                    </div>
+                    <div class="site-nav-toggle"><button aria-label="切换导航栏"><span class="btn-bar"></span> <span
+                                class="btn-bar"></span> <span class="btn-bar"></span></button></div>
+                </div>
+                <nav class="site-nav">
+                    <ul id="menu" class="menu">
+                        <li class="menu-item menu-item-home"><a href="/" rel="section"><i
+                                    class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li>
+                        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i
+                                    class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li>
+                        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i
+                                    class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li>
+                        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i
+                                    class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li>
+                        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i
+                                    class="menu-item-icon fa fa-fw fa-user"></i><br>关于</a></li>
+                        <li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i
+                                    class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li>
+                    </ul>
+                    <div class="site-search">
+                        <div class="popup search-popup local-search-popup">
+                            <div class="local-search-header clearfix"><span class="search-icon"><i
+                                        class="fa fa-search"></i> </span><span class="popup-btn-close"><i
+                                        class="fa fa-times-circle"></i></span>
+                                <div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..."
+                                        spellcheck="false" type="text" id="local-search-input"></div>
+                            </div>
+                            <div id="local-search-result"></div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </div>
-     
-          <div class="menu" id="mobile-menu">
-                
-                
-                <a class="menu-item" href="http://localhost:1313/posts/" title="">博客</a>
-                
-                <a class="menu-item" href="http://localhost:1313/categories/" title="">分类</a>
-                
-                <a class="menu-item" href="http://localhost:1313/tags/" title="">标签</a>
-                
-                <a class="menu-item" href="http://localhost:1313/about/" title="">关于</a>
-                
-                <a class="menu-item" href="http://localhost:1313/search/" title="">搜索</a>
-                
-                <a class="menu-item" href="http://localhost:1313/about/" title="About Hugo">About Hugo</a>
-                
-        </div>
+        </header><a href="https://github.com/daliansky" class="github-corner" title="Follow me on GitHub"
+            aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80"
+                viewbox="0 0 250 250" style="fill:#222;color:#fff;position:absolute;top:0;border:0;right:0"
+                aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor" style="transform-origin:130px 106px" class="octo-arm" />
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor" class="octo-body" /></svg></a>
+        <main id="main" class="main">
+            <div class="main-inner">
+                <div class="content-wrap">
+                    <div id="content" class="content">
+                        <div id="posts" class="posts-expand">
+                            <div class="reading-progress-bar"></div>
+                            <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+                                <div class="post-block">
+                                    <link itemprop="mainEntityOfPage"
+                                        href="https://blog.daliansky.net/Do-not-need-to-make-installation-disk-Teach-you-to-install-the-High-Sierra-system-on-another-MacOS-system-to-another-partition.html">
+                                    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                        <meta itemprop="name" content="黑果小兵">
+                                        <meta itemprop="description"
+                                            content="黑果小兵,daliansky,blog.daliansky.net,macOS,Hackintosh,黑苹果,linux">
+                                        <meta itemprop="image" content="/images/avatar.png"></span><span hidden
+                                        itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                        <meta itemprop="name" content="黑果小兵的部落阁"></span>
+                                    <header class="post-header">
+                                        <h1 class="post-title" itemprop="name headline">不需要制作安装盘！教你在MacOS系统下安装High
+                                            Sierra系统到另一个分区</h1>
+                                        <div class="post-meta"><span class="post-time"><span
+                                                    class="post-meta-item-icon"><i class="fa fa-calendar-o"></i>
+                                                </span><time title="创建时间：2017-08-16 22:11:02"
+                                                    itemprop="dateCreated datePublished"
+                                                    datetime="2017-08-16T22:11:02+08:00">2017-08-16</time> <span
+                                                    class="post-meta-divider">|</span> <span
+                                                    class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i>
+                                                </span><time title="修改时间：2017-08-28 11:08:02" itemprop="dateModified"
+                                                    datetime="2017-08-28T11:08:02+08:00">2017-08-28</time> </span><span
+                                                class="post-category"><span class="post-meta-divider">|</span> <span
+                                                    class="post-meta-item-icon"><i class="fa fa-folder-o"></i>
+                                                </span><span itemprop="about" itemscope
+                                                    itemtype="http://schema.org/Thing"><a href="/categories/教程/"
+                                                        itemprop="url" rel="index"><span
+                                                            itemprop="name">教程</span></a></span> </span><span
+                                                class="post-meta-divider">|</span> <span class="post-meta-item-icon"
+                                                title="阅读次数"><i class="fa fa-eye"></i> <span class="busuanzi-value"
+                                                    id="busuanzi_value_page_pv"></span></span>
+                                            <div class="post-symbolscount"><span class="post-meta-item-icon"><i
+                                                        class="fa fa-file-word-o"></i> </span><span
+                                                    title="本文字数">1.2k</span> <span class="post-meta-divider">|</span>
+                                                <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i>
+                                                </span><span title="阅读时长">2 分钟</span></div>
+                                        </div>
+                                    </header>
+                                    <div class="post-body" itemprop="articleBody">
+                                        <h1 id="不需要制作安装盘教你在-macos-系统下安装-high-sierra-系统到另一个分区"><a
+                                                class="markdownIt-Anchor"
+                                                href="#不需要制作安装盘教你在-macos-系统下安装-high-sierra-系统到另一个分区"></a> 不需要制作安装盘！教你在
+                                            MacOS 系统下安装 High Sierra 系统到另一个分区</h1>
+                                            <h2 id="警告">警告</h2>
+                                            <p>Hackintool 不是一个让你无脑使用的自动化补丁工具。在使用它之前，你需要一定的知识储备. 请您务必在使用这个工具之前阅读 <a href="https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen">Intel Framebuffer patching using WhateverGreen</a>（英文）! 和 <a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md">Whatevergreen</a>的<strong>中文</strong>官方文档。</p>
+                                            <h2 id="功能">功能</h2>
+                                            <ul>
+                                            <li>支持 Sandy Bridge, Ivy Bridge, Haswell, Broadwell, Skylake, KabyLake, Coffee Lake, Cannon Lake, Ice Lake 几乎所有的平台</li>
+                                            <li><a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">修补核显输出接口</a></li>
+                                            <li>创建显存大小修改补丁</li>
+                                            <li>EDID 注入</li>
+                                            <li>检测自动修补程序创建的变化</li>
+                                            <li>创建 Clover 补丁，支持 hex，base64 或 Devices/Properties 等三种格式</li>
+                                            <li>显示原生GPU和型号标识</li>
+                                            <li>显示和编辑内存信息，如缓冲帧，显存，Cursor 等</li>
+                                            <li>弹出一些项目的提示信息（Tool tips）</li>
+                                            <li>直接读取已加载生效的xxxFramebuffer kext的数据</li>
+                                            <li>文件 ▸ 打开通过 Debug 版本的 <code>WhatEverGreen.kext</code> 的 <code>-igfxdump</code> 引导标志生成的缓冲帧文件</li>
+                                            <li>文件 ▸ 导出 ▸ Clover Config.plist 并对现有 Config.plist 进行无损打补丁</li>
+                                            <li>文件 ▸ 导出 ▸ Framebuffer.txt （缓冲帧文本形式）</li>
+                                            <li>修补音频 Layout ID</li>
+                                            <li>字符串转换与进制转换</li>
+                                            <li>读取 Clover 开机日志，Lilu（Debug）日志，Lilu（Debug）内核日志，Whatevergreen (Debug) 内核日志，AppleALC (Debug) 内核日志</li>
+                                            <li>显示硬盘分区图的详细信息</li>
+                                            <li>读取 Lilu，Whatevergreen，AppleALC，USBInjectAll 的安装信息</li>
+                                            <li>添加 NVRAM 的内核引导标识符</li>
+                                            <li>装载/卸载 EFI 分区</li>
+                                            <li>添加 USB 端口限制补丁</li>
+                                            <li>添加 DSDT 重命名</li>
+                                            <li>定制 USB</li>
+                                            <li>高级修补选项（DVMT-prealloc 32 MB ，显存 2048 MB，禁用 eGPU，启用HDMI20（4K），仿冒声卡 ID，将 DP 映射到 HDMI，USB端口限制，FB端口限制，修复热插拔重启，注入设备 ID 等）</li>
+                                            </ul>
+                                            <p><strong>两个开味小菜：</strong></p>
+                                            <ul>
+                                            <li>声卡修补</li>
+                                            <li>显示器 EDID 修补</li>
+                                            </ul>
+                                            <h2 id="声卡修补">声卡修补</h2>
+                                            <ol>
+                                            <li>安装最新的 <a href="https://github.com/acidanthera/Lilu/releases">Lilu</a> + <a href="https://github.com/acidanthera/AppleALC/releases">AppleALC</a></li>
+                                            <li><a href="https://mackie100projects.altervista.org/download-clover-configurator/">Clover Configurator</a> 设置 config.plist ▸ Devices ▸ Audio ▸ Inject ▸ <code>No</code></li>
+                                            <li>四叶草 (Clover) ▸ DSDT 重命名（如果需要）
+                                            <ul>
+                                            <li>☑️ AZAL ▸ HDEF</li>
+                                            <li>☑️ HDAS ▸ HDEF</li>
+                                            </ul>
+                                            </li>
+                                            <li>选中 补丁 ▸ 通用 ▸ 声音</li>
+                                            <li>设置 Layout ID下拉列表，选择或输入合适你的 Layout ID</li>
+                                            <li>文件 ▸ 导出 ▸ Clover Config.plist（覆盖现有的config.plist文件）</li>
+                                            <li>重新启动</li>
+                                            <li>如果没有音频依然存在问题，请返回步骤4并尝试不同的 Layout ID 注意：如果您尝试所有 Layout ID 但仍有问题，请尝试设置 补丁 ▸ 高级 ▸ 仿冒声卡 ID 选项。 如果这依然不起作用，那么尝试安装<a href="https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/">FakePCIID.kext</a> + <a href="https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/">FakePCIID_Intel_HDMI_Audio.kext</a></li>
+                                            </ol>
+                                            <p><a href="./Xxx _ 科技机场_files/AudioPatch.png"><img src="./Xxx _ 科技机场_files/AudioPatch.png" alt="AudioPatch"></a></p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/AudioPatch2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="AudioPatch2"></a></p>
+                                            <h2 id="显示器-edid-修补">显示器 EDID 修补</h2>
+                                            <p><strong>通过对EDID的修补，您可以修改显示器样式并添加缩放分辨率。</strong></p>
+                                            <ol>
+                                            <li>从显示器列表中，选择您要编辑的显示器。</li>
+                                            <li>（可选）添加/修复监视器范围（如果您的EDID没有它们或它们是坏的）。</li>
+                                            <li>（可选）通过单击“添加”，然后通过单击这些值并进行编辑，可以选择添加缩放分辨率。选择后，可以通过“删除”按钮删除输入的分辨率。</li>
+                                            <li>单击“导出”按钮会在桌面上生成用于修补的替代文件</li>
+                                            </ol>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Display1.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Display"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Display2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Display2"></a></p>
+                                            <h3 id="安装">安装</h3>
+                                            <p>安装EDID补丁有两种方法：1.显示覆盖 2.扩展库(L/E) <strong>请二选一</strong></p>
+                                            <p><strong>1.显示覆盖 (Display Overrides):</strong></p>
+                                            <ul>
+                                            <li>将 <code>DisplayVendorID-x</code> 文件夹复制到 <code>/System/Library/Displays/Contents/Resources/Overrides</code> (或者 <code>/System/Library/Displays/Overrides</code> El Capitan 及以前版本)</li>
+                                            <li>将 <code>Icons.plist</code> 复制到 <code>/System/Library/Displays/Contents/Resources/Overrides</code> (或者 <code>/System/Library/Displays/Overrides</code> El Capitan 及以前版本)</li>
+                                            </ul>
+                                            <p><strong>2.扩展库 (Library Extensions):</strong></p>
+                                            <ul>
+                                            <li>将 <code>DisplayEDID-x-x.kext</code> 复制到 <code>/Library/Extensions</code> 或者 <code>EFI/Clover/kexts/Other</code> (取决于您的配置，建议使用 <code>Clover</code> 的方法)</li>
+                                            </ul>
+                                            <p><strong>系统完整性保护 (SIP)</strong></p>
+                                            <p>您需要禁用SIP <code>(sudo spctl --master-disable)</code> 才能将文件复制到方法1所述位置。</p>
+                                            <h3 id="额外信息">额外信息</h3>
+                                            <p>如果您有16:10的显示器并想使用缩放分辨率，您可以使用：</p>
+                                            <ul>
+                                            <li>iMac 显示器</li>
+                                            <li>MacBook Pro 显示器</li>
+                                            <li>Cinema HD 显示器</li>
+                                            <li>LED Cinema 显示器</li>
+                                            </ul>
+                                            <p>对于16：9显示器和缩放分辨率，您可以使用：</p>
+                                            <ul>
+                                            <li>Apple Thunderbolt 显示器 (不要用于内建显示器！！！)</li>
+                                            <li>iMac Retina 显示器</li>
+                                            <li>MacBook Air 显示器</li>
+                                            </ul>
+                                            <h2 id="工具栏">工具栏</h2>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Tools.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Tools"></a></p>
+                                            <ol>
+                                            <li>从 AppleIntelInfo.kext 中获取 CPU 的详细信息
+                                            <ul>
+                                            <li>注意！使用完这个功能后需要重启来还原 CPU 的状态！</li>
+                                            </ul>
+                                            </li>
+                                            <li>从 macOS 10.14 开始，苹果删除了 高通 AR92XX/93XX 的驱动，点击这里可以一键安装</li>
+                                            <li>安装驱动以在 macOS 10.14 上启用 SATA 热插拔</li>
+                                            <li>生成 Windows 蓝牙注册表文件</li>
+                                            <li>生成 Windows UTC 时间同步注册表文件
+                                            <ul>
+                                            <li>不推荐，建议更改 macOS 内时区来同步时间</li>
+                                            </ul>
+                                            </li>
+                                            <li>导出 DSDT
+                                            <ul>
+                                            <li>用于导出现在系统使用的 ACPI 表，用于查看 Clover 重命名效果，TgBridge 错误，提取白苹果 ACPI 表等等</li>
+                                            <li><strong>强烈不推荐用于提取原始 ACPI 表，请绕路 Clover F4</strong></li>
+                                            </ul>
+                                            </li>
+                                            <li>安装驱动
+                                            <ul>
+                                            <li>安装下载好的 Kext 到 <code>Library/Extensions</code> (俗称 L/E)</li>
+                                            </ul>
+                                            </li>
+                                            <li>重建缓存并修复权限
+                                            <ul>
+                                            <li>安装完驱动必须点击执行</li>
+                                            </ul>
+                                            </li>
+                                            </ol>
+                                            <h2 id="定制usb">定制USB</h2>
+                                            <p>macOS 10.14.1+ 的USB端口限制补丁已经失效了，因此无法一次配置所有端口。 <a href="https://github.com/RehabMan">RehabMan</a> 已更新 <code>USBInjectAll.kext</code> 并已包含用于排除端口组的引导标志。</p>
+                                            <ol>
+                                            <li>
+                                            <p>将 <code>USBInjectAll.kext</code> (用于端口发现) 放入 <code>EFI/CLOVER/kexts/Other</code></p>
+                                            </li>
+                                            <li>
+                                            <p>Clover ▸ DSDT 重命名 (如果需要)</p>
+                                            <ul>
+                                            <li>☑️ XHC1 ▸ XHC</li>
+                                            <li>☑️ EHC1 ▸ EH01</li>
+                                            <li>☑️ EHC2 ▸ EH02</li>
+                                            </ul>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBPatch.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBPatch"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBPatch2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBPatch2"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>重新启动</p>
+                                            </li>
+                                            <li>
+                                            <p>运行 Hackintool 然后转到 工具栏 ▸ <code>已安装</code> 检查 <code>USBInjectAll</code> 是否安装正确</p>
+                                            <ul>
+                                            <li>如果你看到：<code>USBInjectAll: Yes (Release-0.7.1)</code> 就说明没问题了</li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>转到 工具栏 ▸ <code>USB</code> 来查看 USB 控制器列表。因为这里需要基于 USB控制器 您可能需要安装额外的 kexts:</p>
+                                            <ul>
+                                            <li>8086:8CB1 和 macOS (10.11.1) ▸ 请使用 <code>XHCI-9-series.kext</code></li>
+                                            <li>8086:8D31, 8086:A2AF, 8086:A36D, 8086:9DED ▸ <code>请使用 XHCI-unsupported.kext</code></li>
+                                            <li>8086:1E31, 8086:8C31, 8086:8CB1, 8086:8D31, 8086:9C31, 8086:9CB1 ▸ <code>请使用 FakePCIID.kext + FakePCIID_XHCIMux.kext</code></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>如果您缺少了其中一个附加的 kexts，<strong>请完成安装并立即重新启动</strong>，然后再次运行 Hackintool</p>
+                                            </li>
+                                            <li>
+                                            <p>转到 工具栏 ▸ <code>USB</code> 选项</p>
+                                            </li>
+                                            <li>
+                                            <p><strong>依次选择 USB 端口列表中的各个项目，然后单击“删除”删掉全部项目，完成后再单击“刷新”按钮</strong></p>
+                                            </li>
+                                            <li>
+                                            <p>使用 <code>-uia_exclude_ss uia_include=HS01,HS02</code></p>
+                                            <ul>
+                                            <li>这里的 <code>HS01</code> 和 <code>HS02</code> 是鼠标和键盘，请根据<strong>自己的设备位置</strong>对其进行更改</li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>运行 Hackintool 并转到 工具栏 ▸ <code>USB</code> 选项</p>
+                                            <ul>
+                                            <li>用一个 USB 2.0 的设备将所有的2.0端口（通常为黑色）全部插拔一遍</li>
+                                            <li>活动的端口将以<code>绿色</code>突出显示
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOrigin.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOrigin"></a></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>删除所有<strong>未</strong>突出显示为绿色的端口，请您也用小本将活动端口的数据记下来，以防万一</p>
+                                            </li>
+                                            <li>
+                                            <p>删除 <code>-uia_exclude_ss</code> 引导标志，并使用 <code>-uia_exclude_hs</code> 引导标志重新启动</p>
+                                            </li>
+                                            <li>
+                                            <p>运行 Hackintool 并转到工具栏 ▸ <code>USB</code> 选项</p>
+                                            <ul>
+                                            <li>用 USB 3.0 的设备将所有的3.0端口（蓝色/红色/黄色）全部插拔一遍</li>
+                                            <li>USB Type-C 接口的设备需要用<strong>正反两面</strong>对所有的端口进行插拔</li>
+                                            <li>活动的端口将以绿色突出显示</li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>删除所有未突出显示为绿色的端口，请您也用小本将活动端口的数据记下来，以防万一
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBDEL.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBDEL"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>使用下拉列表将每个端口设置为适当的接口类型</p>
+                                            <ul>
+                                            <li>永久连接设备的USB端口（例如M.2蓝牙卡）应设置为 <code>Internal</code> (内建)</li>
+                                            <li>与 USB3 端口相连的 HSxx 端口 (USB2) 应设置为 <code>USB3</code></li>
+                                            <li>内部集线器通常连接到端口PR11和PR21，因此应设置为 <code>Internal</code> (内建)</li>
+                                            <li>USB Type-C 接口可以是9或10，这取决于硬件如何处理 USB Type-C 型设备/电缆的<strong>正反两种可能方向</strong></li>
+                                            <li>如果 USB Type-C 在两个方向上使用相同的 SSxx，则它具有内建切换器，因此应设置为 <code>TypeC+Sw</code></li>
+                                            <li>如果 USB Type-C 在两个方向使用不同的 SSxx，则它没有内建切换器，因此应设置为 <code>TypeC</code></li>
+                                            </ul>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBTest.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBTest"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBFinal.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBFinal"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>使用 <code>导出</code> 按钮在桌面上生成 USB 修复文件</p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOutput.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOutput"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOutput2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOutput2"></a></p>
+                                            <ul>
+                                            <li>
+                                            <p>复制 <code>SSDT-EC.aml</code> (如果有) 到 EFI ▸ CLOVER ▸ ACPI ▸ patched</p>
+                                            </li>
+                                            <li>
+                                            <p>接下来的方案请</p>
+                                            <p>2 选 1</p>
+                                            <p>:</p>
+                                            <ul>
+                                            <li>A) 复制 USBPorts.kext 到 EFI ▸ CLOVER ▸ kexts ▸ Other；或者</li>
+                                            <li>B) 复制 SSDT-UIAC.aml 和 SSDT-USBX.aml (如果有) 到 EFI ▸ CLOVER ▸ ACPI ▸ patched</li>
+                                            </ul>
+                                            </li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>好了，是时候清除不需要的补丁和文件了:</p>
+                                            <ul>
+                                            <li>删除 (<code>-uia_exclude_ss</code>，<code>-uia_exclude_hs</code> 和 <code>uia_include=x</code>)</li>
+                                            <li>删除 <code>USBInjectAll.kext</code> （<strong>如果您使用的是 USB-Ports</strong>）</li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>重启</p>
+                                            </li>
+                                            <li>
+                                            <p>运行 Hackintool 然后转到 工具栏 ▸ <code>USB</code></p>
+                                            </li>
+                                            <li>
+                                            <p>依次选择 USB 端口列表中的各个项目，然后单击“删除”删掉全部项目，完成后再单击“刷新”按钮</p>
+                                            <ul>
+                                            <li>您现在可以检查你的 USB 是否全部正常工作</li>
+                                            <li>如果您要更改USB端口类型，请在更改后重新生成修复文件并替换之前的文件</li>
+                                            <li>如果您一不小心删了修补文件，请重新从头来过，或者您可以用您的小本 ⊙﹏⊙∥∣°</li>
+                                            </ul>
+                                            </li>
+                                            </ol>
+                                            <p><strong>FAQ</strong>
+                                            Q. 什么是 <code>USBPorts.kext</code> ?
+                                            A. 它是一个 无代码的核心驱动 用于注入 USB 端口，让所有的USB端口都能正常工作</p>
+                                            <p>Q. 我还需要在使用USBPorts.kext 的同时使用 <code>SSDT-UIAC.aml</code> 吗？
+                                            A. 不，这个方法生成的是一个空壳的无代码的kext驱动，无需同时使用 <code>SSDT-UIAC.aml</code></p>
+                                            <h3 id="usb定制视频教程">USB定制视频教程</h3>
+                                            <!-- raw HTML omitted -->
+                                            <h2 id="核心功能给缓冲帧打补丁">核心功能：给缓冲帧打补丁</h2>
+                                            <p>随着<code>macOS Mojave</code>的发行，之前的通过<code>Clover</code> ▸ <code>KextsToPatch</code> 通过修补帧缓冲的方法已经失效了，尤其是 <code>SkyLake</code> 及以后架构。您现在必须使用 <code>Lilu</code> + <code>WhateverGreen</code>+<code>FB Patcher</code> 的方式来驱动您的显卡。</p>
+                                            <h3 id="初步动作">初步动作</h3>
+                                            <ul>
+                                            <li>删除 <code>FakePCIID</code>，<code>IntelGraphicsFixup</code>，<code>NvidiaGraphicsFixup</code>,<code>Shiki</code> 和 <code>CoreDisplayFixup</code></li>
+                                            <li>关闭 <code>Clover</code> 里面关于 <code>Graphics</code> 注入的参数，这些参数包括：
+                                            <ul>
+                                            <li>config.plist ▸ Graphics ▸ 🔲 Inject ATI</li>
+                                            <li>config.plist ▸ Graphics ▸ 🔲 Inject Intel</li>
+                                            <li>config.plist ▸ Graphics ▸ 🔲 Inject NVidia</li>
+                                            <li>config.plist ▸ Graphics ▸ ig-platform-id= <code>清空</code></li>
+                                            <li>config.plist ▸ Devices ▸ FakeID ▸ IntelGFX= <code>清空</code></li>
+                                            </ul>
+                                            </li>
+                                            <li>关闭 <code>Clover</code> 里面关于<code>Acpi</code> ▸ <code>DSDT</code> 的修复：
+                                            <ul>
+                                            <li>🔲 <code>AddHDMI</code></li>
+                                            <li>🔲 <code>FixDisplay</code></li>
+                                            <li>🔲 <code>FixIntelGfx</code></li>
+                                            <li>🔲 <code>AddIMEI</code></li>
+                                            </ul>
+                                            </li>
+                                            <li><code>Devices</code> 禁用 <code>UseIntelHDMI</code></li>
+                                            <li>移除 <code>boot argument</code> 参数：<code>-disablegfxfirmware</code></li>
+                                            <li>移除 <code>IGPU</code> 和 <code>HDMI</code> 部分的全部内容，包括：
+                                            <ul>
+                                            <li>config.plist ▸ Devices ▸ Arbitrary</li>
+                                            <li>config.plist ▸ Devices ▸ Properties</li>
+                                            <li>config.plist ▸ Devices ▸ AddProperties</li>
+                                            </ul>
+                                            </li>
+                                            <li>从以下位置删除任何与 <code>IGPU</code> 和 <code>HDMI</code> 相关的 <code>SSDT</code> 和 <code>DSDT</code> ：
+                                            <ul>
+                                            <li>Clover ▸ ACPI ▸ patched</li>
+                                            </ul>
+                                            </li>
+                                            </ul>
+                                            <h3 id="使用方法">使用方法</h3>
+                                            <ol>
+                                            <li>
+                                            <p>打开应用：<code>Hackintool.app</code></p>
+                                            </li>
+                                            <li>
+                                            <p>通过菜单项：<code>缓冲帧</code>选择 <code>macOS 10.13.6</code> / <code>macOS 10.14</code><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-Select.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-Select"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>选择显卡对应的处理器架构，比如</p>
+                                            <ul>
+                                            <li><code>Intel UHD Graphics 630</code>就需要选择<code>Coffee Lake</code></li>
+                                            <li><code>Intel HD Graphics 620</code>就需要选择<code>Kaby Lake</code></li>
+                                            <li><code>Intel HD Graphics 520</code>就需要选择<code>Skylake</code>，等等，</li>
+                                            </ul>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-1.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-1"></a></p>
+                                            <p>之后选择<code>平台 ID</code>，这个就是能正确驱动你的显卡的 ID，至于这个 ID 如何确定，请参考<a href="https://blog.daliansky.net/Intel-core-display-platformID-finishing.html">黑苹果必备：Intel核显platform ID整理及smbios速查表</a> 并针对白苹果所使用的 ID 选取适合您的 <code>平台 ID</code>。</p>
+                                            <p>如果您想了解更多信息，请阅读<a href="https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/">针对 Whatevergreen 的缓冲帧修补教程（英文）</a>。中文版：<a href="https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html">Coffee Lake帧缓冲区补丁及UHD630 Coffee Lake ig-platform-id数据整理</a> 和 <a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">教程：利用Hackintool打开第8代核显HDMI输出的正确姿势</a></p>
+                                            </li>
+                                            <li>
+                                            <p>点击<code>应用补丁</code>按钮，在<code>通用</code>选项中勾选<code>设备/属性</code>，<code>自动侦测变化</code>，<code>全部</code>，<code>接口</code>，<code>显存</code>这几个选项；</p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-2"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>在<code>高级</code>选项中勾选<code>DVMT pre-alloc 32 MB</code>，<code>显存 2048MB</code>，<code>禁用 eGPU</code>，<code>启用 HDMI20(4K)</code>，<code>将 DP 映射到 HDMI</code>，<code>FB 端口数限制</code></p>
+                                            </li>
+                                            <li>
+                                            <p>勾选<code>设备</code>，选择<code>平台 ID</code> <strong>相对应的</strong> <code>设备 ID</code>，这通常跟你的显卡名称相吻合</p>
+                                            </li>
+                                            <li>
+                                            <p>点击<code>生成补丁</code>生成显卡驱动补丁</p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-3.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-3"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>通过菜单项：<code>文件</code> ▸ <code>导出</code> ▸ <code>Config.plist</code>，将该补丁无损注入到 Clover 的配置文件 Config.plist 中</p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-4.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-4"></a></p>
+                                            </li>
+                                            </ol>
+                                            <h3 id="几个例子请您举一反三httpsgithubcomacidantherawhatevergreenblobmastermanualfaqintelhdcnmde4bdbfe794a8-weg-e887aae5ae9ae4b989-fb-e5928c-e7abafe58fa3-e8a1a5e4b881">几个例子：<a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md#%E4%BD%BF%E7%94%A8-weg-%E8%87%AA%E5%AE%9A%E4%B9%89-fb-%E5%92%8C-%E7%AB%AF%E5%8F%A3-%E8%A1%A5%E4%B8%81">（请您举一反三）</a></h3>
+                                            <ul>
+                                            <li>
+                                            <p>Coffee Lake（八代）平台：Intel UHD Graphics 630 (移动端)</p>
+                                            <p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-A.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-A"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-B.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-B"></a>
+                                            <a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-C.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-C"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>Kabe Lake（七代）平台：Intel HD Graphics 620 / Intel UHD Graphics 620 (移动端)</p>
+                                            <ul>
+                                            <li>CPU 架构：Kaby Lake</li>
+                                            <li>平台 ID：<code>0x59160000</code></li>
+                                            <li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
+                                            <li>仿冒图形卡 ID 选择：<code>0x5916: Intel Graphics 620</code></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>Sky Lake（六代）平台：Intel HD Graphics 530 (移动端)</p>
+                                            <ul>
+                                            <li>CPU 架构：Skylake</li>
+                                            <li>平台 ID：<code>0x191B0000</code></li>
+                                            <li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
+                                            <li>仿冒图形卡 ID 选择：<code>0x191B: Intel Graphics 530</code></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p>Haswell（四代）平台：Intel HD Graphics 4600 (移动端)</p>
+                                            <ul>
+                                            <li>CPU 架构：Haswell</li>
+                                            <li>平台 ID：<code>0x0A260006</code></li>
+                                            <li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
+                                            <li>仿冒图形卡 ID 选择：<code>0x0A26: Intel Graphics 4600</code></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <p><strong>注意⚠️：以上设置仅为较为通用的设置，对于某些设备，可能存在疏漏或者冗余</strong></p>
+                                            <ul>
+                                            <li><a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md#%E4%BD%BF%E7%94%A8-weg-%E8%87%AA%E5%AE%9A%E4%B9%89-fb-%E5%92%8C-%E7%AB%AF%E5%8F%A3-%E8%A1%A5%E4%B8%81">查看此处</a>来利用 Hackintool 深度定制 Whatevergreen 补丁</li>
+                                            </ul>
+                                            </li>
+                                            </ul>
+                                            <p><strong>最后通过菜单项：文件 ▸ 导出 ▸ Config.plist，将该补丁导出到 Clover 的配置文件</strong></p>
+                                            <h3 id="各种主板补丁示例集合">各种主板补丁示例集合</h3>
+                                            <p>从<code>Hackintool</code> v2.0.6开始，内部集成了国外论坛的成员提交的缓冲帧补丁示例的集合，现在只需要轻松几步就能生成写好的补丁，源文件请<a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">参考</a></p>
+                                            <ol>
+                                            <li>
+                                            <p>运行<strong>Hackintool</strong>。从顶部菜单栏中选择<strong>缓冲帧</strong>并选择<strong>macOS 10.14</strong>。</p>
+                                            <p><a href="./Xxx _ 科技机场_files/FB-Select.png"><img src="./Xxx _ 科技机场_files/FB-Select.png" alt="Hackintool  - 选择Framebuffer.png"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>从<strong>应用补丁</strong>菜单中，选择<strong>应用当前补丁</strong>，可看到其前面打钩的是正确的状态。</p>
+                                            <p><a href="./Xxx _ 科技机场_files/FB-Patch.png"><img src="./Xxx _ 科技机场_files/FB-Patch.png" alt="Hackintool  -  Patch Menu.png"></a>
+                                            <a href="http://7.daliansky.net/Connectors-screen-shot/Connectors-Before-Patch.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Hackintool  -  Connectors-Before-Patch.png"></a></p>
+                                            </li>
+                                            <li>
+                                            <p>在菜单栏 -&gt; 应用补丁 -&gt; 主板接口 中选择你的主板（如果没有，请按照上文的方法手动创建补丁）</p>
+                                            <p><a href="http://7.daliansky.net/Connectors-screen-shot/Connector-Patches.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Hackintool  -  Connector-Patches.png"></a>
+                                            <a href="./Xxx _ 科技机场_files/Connectors-After-Patch.png"><img src="./Xxx _ 科技机场_files/Connectors-After-Patch.png" alt="Hackintool  -  Connectors-After-Patch.png"></a></p>
+                                            </li>
+                                            </ol>
+                                            <h3 id="fb视频教程">FB视频教程</h3>
+                                            <!-- raw HTML omitted -->
+                                            <h2 id="更新日志">更新日志</h2>
+                                            <p>2.4.6 - ”重建缓存并修复权限“ 被移到了工具栏并增加了进度条</p>
+                                            <p>2.4.5 - 为 ”重建缓存并修复权限“ 增加了输出信息</p>
+                                            <p>2.4.4 - 更新中文语言包，改进编译器</p>
+                                            <p>2.4.3 - 更新中文语言包，修复 USB 配置</p>
+                                            <p>2.4.2 - 更改缓冲帧信息显示方式（选中 / 当前）</p>
+                                            <p>2.4.1 - 更新中文语言包</p>
+                                            <p>2.4.0 - 现在包含了 iMessageDebug 信息 (ElNono / mdmwii / flux84 / sugarface / pokenguyen)。导出系统信息。查看型号信息 (<a href="http://everymac.com/">everymac.com</a>)。 检查序列号。初步的 OpenCore 支持 (感谢 vit9696)</p>
+                                            <p>2.3.9 - ComboBox 修复 (感谢 telepati)</p>
+                                            <p>2.3.8 - 修复错误 (感谢 ReddestDream)</p>
+                                            <p>2.3.7 - 改进了 Clover EFI 装载。Clover PCI导 出现在使用 SubClass 作为 device_type</p>
+                                            <p>2.3.6 - 修复错误。 添加了 “使用 Intel HDMI” 选项（hda-gfx = onboard-x）。添加了 “不缩放” 的分辨率类型</p>
+                                            <p>2.3.5 - 修复了设备路径生成器（gfxutil）中的错误。 添加了 “生成 Windows UTC 注册表文件” 工具</p>
+                                            <p>2.3.4 - 更新了 Codec，以 Clover 和 dsl 格式导出 PCI 列表，现在转储所有 ACPI 表并反编译为 dsl</p>
+                                            <p>2.3.3 - 提取 DSDT（phpdev32），自动更新 PCIID（MuntashirAkon），以 JSON 格式导出 PCI 列表</p>
+                                            <p>2.3.2 - 监控 PCI 热插拔</p>
+                                            <p>2.3.1 - UI 更新</p>
+                                            <p>2.3.1 - 右键单击 PCI 设备，然后选择 “复制 IOReg 路径”。 启动 IORegistryExplorer 并选择 Go-&gt; Go to Path… 菜单，粘贴路径并单击 “Go to Path” 按钮。</p>
+                                            <p>2.2.8 - 添加了 HWP 状态日志记录警告（以前的状态只能在重启后恢复）</p>
+                                            <p>2.2.7 - 添加了 VDA 解码器状态。 为 PCI 设备添加了 DevicePath。 将 PCI 设备列表导出到桌面</p>
+                                            <p>2.2.6 - 改进了引导 EFI 检测。 手动设置引导 EFI。 AppleIntelInfo 显示 30 秒计时器以记录 CStates。 记录后恢复 HWP 状态。添加了英特尔注册警告。计算器现在显示反向字节</p>
+                                            <p>2.2.4 - 添加了 AppleIntelInfo 的选项（启用 HWP，日志：CStates 低压模式，英特尔核显，IPG 类型，英特尔注册表， MSRs），添加了 20 秒的等待时间来让 AppleIntelInfo 获取 CState 低压模式信息。</p>
+                                            <p>2.2.2 - 添加了信息栏（网络接口，图形卡，声卡设备和储存设备）。 现在会以绿色或红色高亮电源设置来表明问题所在</p>
+                                            <p>2.2.1 - 修复错误</p>
+                                            <p>2.2.0 - 新的 <code>PCI 设备</code>，<code>网络</code>，<code>电源</code> 和 <code>工具</code> 栏</p>
+                                            <p>2.1.9 - 添加了来自 Github 的驱动下载源。下载得到的版本可能会比源代码版本老。而且由于 Github 的 API 限制, 它只会储存最新的下载链接。添加了安装 kext(s) 的功能。添加了重建驱动缓存和修复权限的功能。</p>
+                                            <p>2.1.8 - 使用 <code>kextstat</code> 来获取版本</p>
+                                            <p>2.1.7 - 现在可以侦测更多 kexts</p>
+                                            <p>2.1.6 - 现在可以下载当前版本的 Lilu 和其 插件</p>
+                                            <p>2.0.8 - 在 应用补丁 -&gt; 8代核显HDMI/DVI 菜单中添加了几个配置文件，你可以尝试如果你的 8 代系统有问题 (CaseySJ)</p>
+                                            <p>2.0.4 - 应用 Clover 补丁（KernelToPatch，KextToPatch，DSDT 重命名）。 查看，创建和编辑 NVRAM 变量（小心！）。 查看已安装的 Lilu 及其插件，下载并自动编译最新版本</p>
+                                            <p>2.0.0 - 支持简体中文</p>
+                                            <p>1.9.6 - 增加磁盘功能（图标 / 装载 / 卸载按钮）</p>
+                                            <p>1.9.2 - 修复错误</p>
+                                            <p>1.9.1 - 添加了 SSDT-UIAC.aml / SSDT-USBX.aml 的导出支持</p>
+                                            <p>1.9.0 - 修复启动错误（感谢 @Pavo）</p>
+                                            <p>1.8.7 - 添加了 USB 电源方面的 DSDT 重命名</p>
+                                            <p>1.8.6 - 添加了 DSDT 重命名</p>
+                                            <p>1.8.5 - 修复错误</p>
+                                            <p>1.8.4 - 使用 Sparkle 框架进行自动更新</p>
+                                            <p>1.8.3 - 改进了音频设备侦测 / 选择，窗体现在可以调整大小</p>
+                                            <p>1.8.2 - 添加语言支持 法语 (Matgen84)，德语 (al6042)，韩语 (zisqo)，俄语 / 乌克兰语 (ctich)</p>
+                                            <p>1.8.1 - 添加了 Clover 下载器 (Kozlek / JrCs / slice)，NVRAM 引导标识符编辑，改进授权，更新界面</p>
+                                            <p>1.8.0 - 改进了 USB 电源导出 (corpnewt)，其他修复，新图标</p>
+                                            <p>1.7.9 - 添加了 USB 电源导出, EFI 分区装载, 计算器和日志查看器</p>
+                                            <p>1.7.8 - 添加了分辨率注入（来自底噪的一键 Hidpi）</p>
+                                            <p>1.7.7 - 添加了 AMD 和 nVidia 的 EDID 补丁支持</p>
+                                            <p>1.7.6 - EDID 覆盖现可支持自定义图标</p>
+                                            <p>1.7.5 - 改进了 USB 教程, 添加了打印按钮</p>
+                                            <p>1.7.4 - 修复了默认选中项</p>
+                                            <p>1.7.3 - 更新</p>
+                                            <p>1.7.2 - 将软件更名为 Hackintool，添加了 EDID 注入支持 (Andy Vandijck)</p>
+                                            <p>1.7.1 - 修复暗黑模式</p>
+                                            <p>1.7.0 - 添加了 USB 和 声卡信息，现在会显示可用的仿冒 ID 和需要的 kext</p>
+                                            <p>1.6.9 - 更新</p>
+                                            <p>1.6.8 - 添加了 framebuffer-camellia 和 framebuffer-flags 的补丁支持</p>
+                                            <p>1.6.7 - 添加了 Macmini8,1 和 MacBookAir8,1 的信息</p>
+                                            <p>1.6.6 - 更新了信息文件</p>
+                                            <p>1.6.5 - 修复了 USBInjectAll 的侦测</p>
+                                            <p>1.6.4 - 改进了声卡 layout id 的侦测</p>
+                                            <p>1.6.3 - 现在会显示声卡控制器</p>
+                                            <p>1.6.2 - 修复 USB</p>
+                                            <p>1.6.1 - 改进了仿冒声卡设备 Id 的选项</p>
+                                            <p>1.6.0 - 修复错误</p>
+                                            <p>1.5.9 - 现在会显示 USB 控制器</p>
+                                            <p>1.5.8 - 将在应用程序会话之间存储和恢复 USB 端口，以便与新的 USBInjectAll.kext（0.7.0）一起使用，以便包括用于排除端口组的引导标识符</p>
+                                            <p>1.5.7 - 现在可以检测 EHC 和集线器端口（感谢 RehabMan 和 SavageAUS）。 可多选 USB 端口。 现在可以检测是否安装了 USBInjectAll</p>
+                                            <p>1.5.4 - 修复当用户有多个音频设备时的 Codec 检测。 在高级补丁栏中添加了 “修复重启” 补丁（将连接器通道值设置为18）</p>
+                                            <p>1.5.3 - 改进了 导出 -&gt; Clover config.plist 的功能，现在会自动备份生成 (config-backup.plist)</p>
+                                            <p>1.5.2 - 添加了 应用补丁 -&gt; AzulPatcher4600</p>
+                                            <p>1.5.1 - 修复了 USBPorts 的接口数统计</p>
+                                            <p>1.5.0 - 修复错误</p>
+                                            <p>1.4.9 - 添加了一个工具栏来显示 Lilu，WhateverGreen 和 AppleALC 安装状态和版本信息</p>
+                                            <p>1.4.8 - 修复了为 iasl 的 DSL 源补丁输出 framebuffer-cursormem</p>
+                                            <p>1.4.7 - 支持了新版 WEG 的 -igfxfbdump 引导标识符，使用 文件 -&gt; 导入 -&gt; IOReg 输出 菜单</p>
+                                            <p>1.4.6 - 修复错误。 添加了 缓冲帧 -&gt; macOS 10.14 菜单项。添加了 QE/CI 和 Metal 支持的侦测</p>
+                                            <p>1.4.5 - 支持了 framebuffer-cursormem (Haswell)</p>
+                                            <p>1.4.4 - 修复了注入适当 device-id 的功能</p>
+                                            <p>1.4.3 - 修复错误</p>
+                                            <p>1.4.2 - 添加了 应用补丁 -&gt; 导入 KextsToPatch / 应用当前补 菜单，将 USBPower.kext 重命名为 USBPorts.kext</p>
+                                            <p>1.4.1 - 添加了 TypeC USB 端口</p>
+                                            <p>1.4.0 - 改进了 Intel 架构检测</p>
+                                            <p>1.3.9 - 现在使用 AppleIntelFramebuffer @X 索引来进行接口关联</p>
+                                            <p>1.3.8 - 修复了 AppleIntelFramebuffer 接口数字在内建时应该为索引号 + 4 或者 0 的 Bug (RehabMan)</p>
+                                            <p>1.3.7 - 显示连接器端口上已连接显示器的显示信息（支持显示器热插拔），修复 iASL DSL 源十六进制输出，接口可以拖放以更改顺序</p>
+                                            <p>1.3.6 - 修复错误</p>
+                                            <p>1.3.5 - 现在会尝试 HDAS 如果没有找到 HDEF</p>
+                                            <p>1.3.4 - Added AllData connector patch method (RehabMan). 现在会尝试 GFX0 如果没有找到 IGPU</p>
+                                            <p>1.3.3 - 修复错误。添加了更多的 Layout ID (vandroiy2013)</p>
+                                            <p>1.3.2 - 修复错误</p>
+                                            <p>1.3.1 - 修复错误。添加了新的菜单 缓冲帧 -&gt; 当前版本 / macOS 10.13.6</p>
+                                            <p>1.3.0 - 添加了声卡补丁，Clover config.plist 导出，USB 补丁，高级自动补丁</p>
+                                            <p>1.2.8 - 添加了iASL DSL 的源补丁输出，显示检测到的 Intel 架构和 平台 id</p>
+                                            <p>1.2.7 - 文件 -&gt; 导出 缓冲帧文本形式</p>
+                                            <p>1.2.6 - 修复了预分配显存的计算公式 (vit9696)</p>
+                                            <p>1.2.5 - 依然会在 “自动侦测变化” 勾选时导出一个 config.plist/Devices/Properties 补丁</p>
+                                            <p>1.2.4 - 修复错误</p>
+                                            <p>1.2.3 - config.plist/Devices/Properties 补丁现在会输出数据形式</p>
+                                            <p>1.2.2 - 修复错误</p>
+                                            <p>1.2.1 - 更新和错误修复</p>
+                                            <p>1.2.0 - 为 Cannon Lake 和 Ice Lake 添加支持</p>
+                                            <p>1.1.0 - 添加了机型 MacBookPro15,1 和 MacBookPro15,2</p>
+                                            <p>1.0.9 - 支持 Mojave，Coffee Lake，WhateverGreen 的 -igfxdump 引导标识符和 Clover 的 config.plist/Devices/Properties 补丁输出</p>
+                                            <p>1.0.8 - 更新</p>
+                                            <p>1.0.7 - 修复暗黑模式支持</p>
+                                            <p>1.0.6 - 更好地兼容之前的版本</p>
+                                            <p>1.0.5 - 在启动时检测芯片组和地址, 可以更加容易地修显存值</p>
+                                            <p>1.0.4 - 添加了 GPU / 型号信息</p>
+                                            <p>1.0.3 - 添加了工具提示</p>
+                                            <p>1.0.2 - 添加了显存栏</p>
+                                            <p>1.0.1 - 小修补</p>
+                                            <p>1.0.0 - 最初发布</p>
+                                            <h2 id="下载链接">下载链接</h2>
+                                            <p><a href="http://headsoft.com.au/download/mac/Hackintool.zip">下载 Hackintool</a></p>
+                                            <p><a href="http://headsoft.com.au/download/mac/FBPatcher.zip">下载 FBPatcher V1.7.1</a> 历史版本</p>
+                                            <h2 id="扩展阅读">扩展阅读</h2>
+                                            <p><a href="https://blog.daliansky.net/Intel-core-display-platformID-finishing.html">黑苹果必备：Intel核显platform ID整理及smbios速查表</a></p>
+                                            <p><a href="https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html">macOS High Sierra 10.13.6(17G2112)/Mojave ig-platform-id数据整理</a></p>
+                                            <p><a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">教程：利用Hackintool打开第8代核显HDMI/DVI输出的正确姿势</a></p>
+                                        <h2 id="收工"><a class="markdownIt-Anchor" href="#收工"></a> 收工</h2>
+                                        <h1 id="关于打赏"><a class="markdownIt-Anchor" href="#关于打赏"></a> 关于打赏</h1>
+                                        <p>如果不希望看到博主停更的话，请点击下方的 <code>打赏</code> 支持一下，有钱的捧个钱场，没钱的捧个人场，谢谢大家！</p>
+                                    </div>
+                                    <div>
+                                        <div id="wechat_subscriber"
+                                            style="display:block;padding:10px 0;margin:20px auto;width:100%;text-align:center">
+                                            <img id="wechat_subscriber_qcode" src="/uploads/WeChat.png"
+                                                alt="黑果小兵 wechat" style="max-width:90%">
+                                            <div>微信扫一扫，订阅【黑果小兵的部落阁】</div>
+                                        </div>
+                                    </div>
+                                    <div class="updated"><svg xmlns="http://www.w3.org/2000/svg" width="130"
+                                            height="20">
+                                            <lineargradient id="b" x2="0" y2="100%">
+                                                <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+                                                <stop offset="1" stop-opacity=".1" />
+                                            </lineargradient>
+                                            <clippath id="a">
+                                                <rect width="130" height="20" rx="3" fill="#fff" />
+                                            </clippath>
+                                            <g clip-path="url(#a)">
+                                                <path fill="#555" d="M0 0h55v20H0z" />
+                                                <path fill="#97CA00" d="M55 0h75v20H55z" />
+                                                <path fill="url(#b)" d="M0 0h130v20H0z" />
+                                            </g>
+                                            <g fill="#fff" text-anchor="middle" font-family="Menlo,monospace"
+                                                font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3"
+                                                    textlength="450" transform="scale(.1)">更新日期</text><text x="285"
+                                                    y="140" textlength="450" transform="scale(.1)">更新日期</text><text
+                                                    x="915" y="150" fill="#010101" fill-opacity=".3" textlength="650"
+                                                    transform="scale(.1)">2017-08-28</text><text x="915" y="140"
+                                                    textlength="650" transform="scale(.1)">2017-08-28</text></g>
+                                        </svg></div>
+                                    <div>
+                                        <div>
+                                            <div style="text-align:center;color:#ccc;font-size:14px">-------------本文结束<i
+                                                    class="fa fa-apple"></i>感谢您的阅读-------------</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="padding:10px 0;margin:20px auto;width:90%;text-align:center"><button
+                                                id="rewardButton" disable="enable"
+                                                onclick="if (!window.__cfRLUnblockHandlers) return false; var e=document.getElementById(&quot;QR&quot;);&quot;none&quot;===e.style.display?e.style.display=&quot;block&quot;:e.style.display=&quot;none&quot;"
+                                                data-cf-modified-b95a22166afab536b84b6e65-=""><span>打赏</span></button>
+                                            <div>如果文章对您有帮助，就请站长喝杯咖啡吧 ´◡`</div>
+                                            <div id="QR" style="display:none">
+                                                <div id="wechat" style="display:inline-block"><img id="wechat_qr"
+                                                        src="/images/wechatpay.jpg" alt="黑果小兵 微信支付">
+                                                    <p>微信支付</p>
+                                                </div>
+                                                <div id="alipay" style="display:inline-block"><img id="alipay_qr"
+                                                        src="/images/alipay.jpg" alt="黑果小兵 支付宝">
+                                                    <p>支付宝</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <ul class="qq-qun">
+                                                <div>
+                                                    <p></p>
+                                                    <h2>QQ群列表：</h2>
+                                                    <p></p>
+                                                    <p>688324116 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=6bf69a6f4b983dce94ab42e439f02195dfd19a1601522c10ad41f4df97e0da82"
+                                                            target="_blank" rel="noopener">一起黑苹果</a> 2000人群
+                                                        人满为患<br>1058822256 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=0565a16f6dbfa1c69159d15b8fa4ee6473fbf61cb8e998d56e807459aa3006a2"
+                                                            target="_blank"
+                                                            rel="noopener">黑果小兵黑苹果技术群2</a>（2000人收费群）入群请使用手机QQ<br>875482673
+                                                        <a href="https://shang.qq.com/wpa/qunwpa?idkey=81c3783ae414ddac233af104d949899edde38aeac60defcb05036fa7d3fa2972"
+                                                            target="_blank"
+                                                            rel="noopener">黑果小兵黑苹果技术群</a>（2000人群收费群）已满员，请加上面2群<br>701278330
+                                                        <a href="https://shang.qq.com/wpa/qunwpa?idkey=5bfd8b092f5a3f3079eab8bb1a497973dbba78ad785d9520ad090a931aeb06f6"
+                                                            target="_blank" rel="noopener">黑苹果无线网卡交流群</a> 1000人群
+                                                        DW1820A技术支持群<br>331686786 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91"
+                                                            target="_blank" rel="noopener">一起吃苹果</a> 2000人群
+                                                        人满为患<br>257995340 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=8a63c51acb2bb80184d788b9f419ffcc33aa1ed2080132c82173a3d881625be8"
+                                                            target="_blank" rel="noopener">一起啃苹果</a> 2000人群
+                                                        远景报备群<br>891434070 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=be06e4c13e796e06a5cd3151d7fcc8f2feee8f9b68b1620ce8771111e2822084"
+                                                            target="_blank" rel="noopener">Catalina黑苹果交流群</a> 2000人群
+                                                        远景报备群<br>939122730 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=e7fb8ea793aee10f9e86c70cd134867bde4183cc3eb87424e61e50b3e9cabf72"
+                                                            target="_blank" rel="noopener">Catalina黑苹果交流II群</a>
+                                                        2000人群<br>891677227 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=9a1eaa552c45d736bb6b19d82ad80e76bf82729f1c1a975b437aa3858473231d"
+                                                            target="_blank" rel="noopener">黑果小兵高级群</a> 2000人群
+                                                        尚有空位<br>943307869 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=7080e6ff936fd2e207439ea18c0a34b4651db81ff45d0edf27b34a21a037871e"
+                                                            target="_blank" rel="noopener">黑果小兵高级群II</a> 2000人群
+                                                        新开群，欢迎踊跃加入<br>538643249 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=665ed002721454d2e811535020261a04b0aae2fa3b6a2ffde5778a852f892178"
+                                                            target="_blank" rel="noopener">OpenCore技术交流群</a> 2000人群
+                                                        大神众多非OC适配者慎入<br>673294583 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=c00a79b8adbba92c152f71cdc721660cc2de276f62a1d4435c83b884e7f369c0"
+                                                            target="_blank" rel="noopener">小新Pro黑苹果技术群</a> 500人群
+                                                        非专用机型请勿加入<br>946132482 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=d64dff649d6a19f9496aaa472ee3a14450cfbbeddd0e618edf182ffe320a1fd0"
+                                                            target="_blank" rel="noopener">小新Pro黑苹果</a> 500人群
+                                                        非专用机型请勿加入<br>943181023 <a
+                                                            href="https://shang.qq.com/wpa/qunwpa?idkey=fb772a7e01436d43e1d856a099549551952bb08161ced4a8fc08b4e75e7ab438"
+                                                            target="_blank" rel="noopener">联想小新Air黑苹果交流群</a> 500人群
+                                                        非专用机型请勿加入<br></p>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul class="post-copyright">
+                                            <li class="post-copyright-author"><strong>本文作者： </strong>黑果小兵</li>
+                                            <li class="post-copyright-link"><strong>本文链接：</strong> <a
+                                                    href="https://blog.daliansky.net/Do-not-need-to-make-installation-disk-Teach-you-to-install-the-High-Sierra-system-on-another-MacOS-system-to-another-partition.html"
+                                                    title="不需要制作安装盘！教你在MacOS系统下安装High Sierra系统到另一个分区">https://blog.daliansky.net/Do-not-need-to-make-installation-disk-Teach-you-to-install-the-High-Sierra-system-on-another-MacOS-system-to-another-partition.html</a>
+                                            </li>
+                                            <li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用
+                                                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                                    rel="noopener" target="_blank"><i
+                                                        class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a>
+                                                许可协议。转载请注明出处！</li>
+                                        </ul>
+                                    </div>
+                                    <footer class="post-footer">
+                                        <div class="post-tags"><a href="/tags/High-Sierra/" rel="tag"><i
+                                                    class="fa fa-tag"></i> High Sierra</a> <a href="/tags/安装/"
+                                                rel="tag"><i class="fa fa-tag"></i> 安装</a></div>
+                                        <div class="post-nav">
+                                            <div class="post-nav-next post-nav-item"><a
+                                                    href="/macOS-Sierra-10-12-6-16G29-with-Clover-4133-original-mirror-with-multi-drive.html"
+                                                    rel="next"
+                                                    title="【黑果小兵】macOS Sierra 10.12.6 16G29 with Clover 4133原版镜像带多驱动"><i
+                                                        class="fa fa-chevron-left"></i> 【黑果小兵】macOS Sierra 10.12.6 16G29
+                                                    with Clover 4133原版镜像带多驱动</a></div><span
+                                                class="post-nav-divider"></span>
+                                            <div class="post-nav-prev post-nav-item"><a
+                                                    href="/Mac-frequently-used-to-the-command---continuous-update.html"
+                                                    rel="prev" title="Mac常用到的命令[持续更新]">Mac常用到的命令[持续更新] <i
+                                                        class="fa fa-chevron-right"></i></a></div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="gitalk-container"></div>
+                </div>
+                <div class="sidebar-toggle">
+                    <div class="sidebar-toggle-line-wrap"><span
+                            class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span
+                            class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span
+                            class="sidebar-toggle-line sidebar-toggle-line-last"></span></div>
+                </div>
+                <aside id="sidebar" class="sidebar">
+                    <div id="sidebar-dimmer"></div>
+                    <div class="sidebar-inner">
+                        <ul class="sidebar-nav motion-element">
+                            <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li>
+                            <li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li>
+                        </ul>
+                        <div class="site-overview-wrap sidebar-panel">
+                            <div class="site-overview">
+                                <div class="site-author motion-element" itemprop="author" itemscope
+                                    itemtype="http://schema.org/Person"><a href="/"><img class="site-author-image"
+                                            itemprop="image" src="/images/avatar.png" alt="黑果小兵"></a>
+                                    <p class="site-author-name" itemprop="name">黑果小兵</p>
+                                    <p class="site-description motion-element" itemprop="description">黑果小兵</p>
+                                </div>
+                                <nav class="site-state motion-element">
+                                    <div class="site-state-item site-state-posts"><a href="/archives/"><span
+                                                class="site-state-item-count">87</span> <span
+                                                class="site-state-item-name">日志</span></a></div>
+                                    <div class="site-state-item site-state-categories"><a
+                                            href="/categories/index.html"><span class="site-state-item-count">24</span>
+                                            <span class="site-state-item-name">分类</span></a></div>
+                                    <div class="site-state-item site-state-tags"><a href="/tags/index.html"><span
+                                                class="site-state-item-count">209</span> <span
+                                                class="site-state-item-name">标签</span></a></div>
+                                </nav>
+                                <div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i
+                                            class="fa fa-rss"></i> RSS</a></div>
+                                <div class="links-of-author motion-element"><span class="links-of-author-item"><a
+                                            href="https://github.com/daliansky"
+                                            title="GitHub &rarr; https://github.com/daliansky" rel="noopener"
+                                            target="_blank"><i class="fa fa-fw fa-github"></i></a> </span><span
+                                        class="links-of-author-item"><a href="https://www.jianshu.com/u/df9143008845"
+                                            title="简书 &rarr; http://www.jianshu.com/u/df9143008845" rel="noopener"
+                                            target="_blank"><i class="fa fa-fw fa-heartbeat"></i></a> </span><span
+                                        class="links-of-author-item"><a
+                                            href="https://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91"
+                                            title="QQ &rarr; http://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91"
+                                            rel="noopener" target="_blank"><i class="fa fa-fw fa-qq"></i></a></span>
+                                </div>
+                                <div class="links-of-blogroll motion-element links-of-blogroll-block">
+                                    <div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div>
+                                    <ul class="links-of-blogroll-list">
+                                        <li class="links-of-blogroll-item"><a href="https://blog.iamzhl.top"
+                                                title="https://blog.iamzhl.top" rel="noopener"
+                                                target="_blank">Athlonreg</a></li>
+                                        <li class="links-of-blogroll-item"><a href="http://www.sqlsec.com"
+                                                title="http://www.sqlsec.com" rel="noopener" target="_blank">国光</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+                            <div class="post-toc">
+                                <div class="post-toc-content">
+                                    <ol class="nav">
+                                        <li class="nav-item nav-level-1"><a class="nav-link"
+                                                href="#不需要制作安装盘教你在-macos-系统下安装-high-sierra-系统到另一个分区"><span
+                                                    class="nav-number">1.</span> <span class="nav-text">不需要制作安装盘！教你在
+                                                    MacOS 系统下安装 High Sierra 系统到另一个分区</span></a>
+                                            <ol class="nav-child">
+                                                <li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span
+                                                            class="nav-number">1.1.</span> <span
+                                                            class="nav-text">开始</span></a></li>
+                                                <li class="nav-item nav-level-2"><a class="nav-link" href="#命令1"><span
+                                                            class="nav-number">1.2.</span> <span
+                                                            class="nav-text">命令1：</span></a></li>
+                                                <li class="nav-item nav-level-2"><a class="nav-link" href="#命令2"><span
+                                                            class="nav-number">1.3.</span> <span
+                                                            class="nav-text">命令2：</span></a></li>
+                                                <li class="nav-item nav-level-2"><a class="nav-link"
+                                                        href="#命令3检查分区是否可引导-为此键入以下命令"><span
+                                                            class="nav-number">1.4.</span> <span
+                                                            class="nav-text">命令3：检查分区是否可引导。 为此，键入以下命令：</span></a></li>
+                                                <li class="nav-item nav-level-2"><a class="nav-link" href="#收工"><span
+                                                            class="nav-number">1.5.</span> <span
+                                                            class="nav-text">收工</span></a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="nav-item nav-level-1"><a class="nav-link" href="#关于打赏"><span
+                                                    class="nav-number">2.</span> <span class="nav-text">关于打赏</span></a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer id="footer" class="footer">
+            <div class="footer-inner">
+                <div class="copyright"><a href="http://www.beian.miit.gov.cn" rel="noopener"
+                        target="_blank">辽ICP备15000696号-3 </a>&copy; 2016 – <span itemprop="copyrightYear">2020</span>
+                    <span class="with-love" id="animate"><i class="fa fa-apple"></i> </span><span class="author"
+                        itemprop="copyrightHolder">黑果小兵</span> <span class="post-meta-divider">|</span> <span
+                        class="post-meta-item-icon"><i class="fa fa-area-chart"></i> </span><span
+                        title="站点总字数">543k</span> <span class="post-meta-divider">|</span> <span
+                        class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span
+                        title="站点阅读时长">16:26</span></div>
+                <div class="busuanzi-count">
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+                        type="b95a22166afab536b84b6e65-text/javascript"></script><span class="site-uv" title="总访客量"><i
+                            class="fa fa-user"></i> <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span><span class="site-pv" title="总访问量"><i class="fa fa-eye"></i> <span class="busuanzi-value"
+                            id="busuanzi_value_site_pv"></span></span></div>
+            </div>
+        </footer>
+        <div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div>
     </div>
-</nav>
-    	 <main class="main">
-          <div class="container">
-      		
-<article class="post-warp" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Xxx</h1>
-        <div class="post-meta">
-                Written by <a itemprop="name" href="http://localhost:1313/" rel="author">Covey.机场</a> with ♥ 
-                <span class="post-time">
-                on <time datetime="2020-03-27" itemprop="datePublished">March 27, 2020</time>
-                </span>
-                in
-                
-        </div>
-        
-    </header>
-    <div class="post-content">
-        
+    <script
+        type="b95a22166afab536b84b6e65-text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script>
+    <script src="/lib/jquery/index.js?v=2.1.3" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/utils.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/motion.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/scrollspy.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/post-details.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/bootstrap.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+    <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script
+        type="b95a22166afab536b84b6e65-text/javascript">var gitalk=new Gitalk({clientID:"0da3e792a21a77938da6",clientSecret:"4d2869563000629ee6dbed48fbbf878aea151cb6",repo:"daliansky.github.io",owner:"daliansky",admin:["daliansky"],id:md5(location.pathname),distractionFreeMode:"true"});gitalk.render("gitalk-container")</script>
+    <script
+        type="b95a22166afab536b84b6e65-text/javascript">function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".search-popup-overlay").click(onPopupClose),$(".popup").toggle();var t=$("#local-search-input");t.attr("autocapitalize","none"),t.attr("autocorrect","off"),t.focus()}var isfetched=!1,isXml=!0,search_path="search.xml";0===search_path.length?search_path="search.xml":/json$/i.test(search_path)&&(isXml=!1);var path="/"+search_path,onPopupClose=function(t){$(".popup").hide(),$("#local-search-input").val(""),$(".search-result-list").remove(),$("#no-result").remove(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")},searchFunc=function(t,e,o){"use strict";$("body").append('<div class="search-popup-overlay local-search-pop-overlay"><div id="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div>').css("overflow","hidden"),$("#search-loading-icon").css("margin","20% auto 0 auto").css("text-align","center"),$.ajax({url:t,dataType:isXml?"xml":"json",async:!0,success:function(t){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var n=isXml?$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get():t,r=document.getElementById(e),s=document.getElementById(o),a=function(){var t=r.value.trim().toLowerCase(),e=t.split(/[\s\-]+/);e.length>1&&e.push(t);var o=[];if(t.length>0&&n.forEach(function(n){function r(e,o,n,r){for(var s=r[r.length-1],a=s.position,i=s.word,l=[],h=0;a+i.length<=n&&0!=r.length;){i===t&&h++,l.push({position:a,length:i.length});var p=a+i.length;for(r.pop();0!=r.length&&(s=r[r.length-1],a=s.position,i=s.word,p>a);)r.pop()}return c+=h,{hits:l,start:o,end:n,searchTextCount:h}}function s(t,e){var o="",n=e.start;return e.hits.forEach(function(e){o+=t.substring(n,e.position);var r=e.position+e.length;o+='<b class="search-keyword">'+t.substring(e.position,r)+"</b>",n=r}),o+=t.substring(n,e.end)}var a=!1,i=0,c=0,l=n.title.trim(),h=l.toLowerCase(),p=n.content.trim().replace(/<[^>]+>/g,""),u=p.toLowerCase(),f=decodeURIComponent(n.url),d=[],g=[];if(""!=l&&(e.forEach(function(t){function e(t,e,o){var n=t.length;if(0===n)return[];var r=0,s=[],a=[];for(o||(e=e.toLowerCase(),t=t.toLowerCase());(s=e.indexOf(t,r))>-1;)a.push({position:s,word:t}),r=s+n;return a}d=d.concat(e(t,h,!1)),g=g.concat(e(t,u,!1))}),(d.length>0||g.length>0)&&(a=!0,i=d.length+g.length)),a){[d,g].forEach(function(t){t.sort(function(t,e){return e.position!==t.position?e.position-t.position:t.word.length-e.word.length})});var v=[];0!=d.length&&v.push(r(l,0,l.length,d));for(var $=[];0!=g.length;){var C=g[g.length-1],m=C.position,x=C.word,w=m-20,y=m+80;w<0&&(w=0),y<m+x.length&&(y=m+x.length),y>p.length&&(y=p.length),$.push(r(p,w,y,g))}$.sort(function(t,e){return t.searchTextCount!==e.searchTextCount?e.searchTextCount-t.searchTextCount:t.hits.length!==e.hits.length?e.hits.length-t.hits.length:t.start-e.start});var T=parseInt("1");T>=0&&($=$.slice(0,T));var b="";b+=0!=v.length?"<li><a href='"+f+"' class='search-result-title'>"+s(l,v[0])+"</a>":"<li><a href='"+f+"' class='search-result-title'>"+l+"</a>",$.forEach(function(t){b+="<a href='"+f+'\'><p class="search-result">'+s(p,t)+"...</p></a>"}),b+="</li>",o.push({item:b,searchTextCount:c,hitCount:i,id:o.length})}}),1===e.length&&""===e[0])s.innerHTML='<div id="no-result"><i class="fa fa-search fa-5x" /></div>';else if(0===o.length)s.innerHTML='<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>';else{o.sort(function(t,e){return t.searchTextCount!==e.searchTextCount?e.searchTextCount-t.searchTextCount:t.hitCount!==e.hitCount?e.hitCount-t.hitCount:e.id-t.id});var a='<ul class="search-result-list">';o.forEach(function(t){a+=t.item}),a+="</ul>",s.innerHTML=a}};r.addEventListener("input",a),$(".local-search-pop-overlay").remove(),$("body").css("overflow",""),proceedsearch()}})};$(".popup-trigger").click(function(t){t.stopPropagation(),isfetched===!1?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(onPopupClose),$(".popup").click(function(t){t.stopPropagation()}),$(document).on("keyup",function(t){var e=27===t.which&&$(".search-popup").is(":visible");e&&onPopupClose()})</script>
+    <script src="/js/src/js.cookie.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/js/src/scroll-cookie.js?v=6.6.0" type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"
+        type="b95a22166afab536b84b6e65-text/javascript"></script>
+    <script
+        type="b95a22166afab536b84b6e65-text/javascript">L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",model:{scale:1.2,hHeadPos:.5,vHeadPos:.618,jsonPath:"/live2dw/assets/tororo.model.json"},display:{superSample:2,width:150,height:300,position:"right",hOffset:0,vOffset:-20},mobile:{show:!1,scale:.5},react:{opacityDefault:.7,opacityOnHover:.2},log:!1,tagMode:!1})</script>
+    <script
+        type="b95a22166afab536b84b6e65-text/javascript">!function(t){function n(){for(var n=0;n<e.length;n++)i=e[n],0<=(o=i.getBoundingClientRect()).top&&0<=o.left&&o.top<=(t.innerHeight||document.documentElement.clientHeight)&&function(t){var i,o,c,r,l=e[n];i=l,o=function(){e=e.filter(function(t){return l!==t})},c=new Image,r=i.getAttribute("data-original"),c.onload=function(){i.src=r,o&&o()},c.src=r}();var i,o}var e=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));n(),t.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(n,t)})}(this)</script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="b95a22166afab536b84b6e65-|49" defer=""></script>
+</body>
 
-        
-            
-        
-
-        
-        
-     
-          
-          
-          
-
-          
-          
-          
-
-          <h1 id="hackintool原intel-fb-patcher使用教程及插入姿势">Hackintool(原Intel FB-Patcher)使用教程及插入姿势</h1>
-<p>2018-09-23 |  2019-12-30</p>
-<p>|  <a href="https://blog.daliansky.net/categories/%E6%95%99%E7%A8%8B/">教程</a></p>
-<p>|</p>
-<p>276893</p>
-<p>12k |  22 分钟</p>
-<h2 id="警告">警告</h2>
-<p>Hackintool 不是一个让你无脑使用的自动化补丁工具。在使用它之前，你需要一定的知识储备. 请您务必在使用这个工具之前阅读 <a href="https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen">Intel Framebuffer patching using WhateverGreen</a>（英文）! 和 <a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md">Whatevergreen</a>的<strong>中文</strong>官方文档。</p>
-<h2 id="功能">功能</h2>
-<ul>
-<li>支持 Sandy Bridge, Ivy Bridge, Haswell, Broadwell, Skylake, KabyLake, Coffee Lake, Cannon Lake, Ice Lake 几乎所有的平台</li>
-<li><a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">修补核显输出接口</a></li>
-<li>创建显存大小修改补丁</li>
-<li>EDID 注入</li>
-<li>检测自动修补程序创建的变化</li>
-<li>创建 Clover 补丁，支持 hex，base64 或 Devices/Properties 等三种格式</li>
-<li>显示原生GPU和型号标识</li>
-<li>显示和编辑内存信息，如缓冲帧，显存，Cursor 等</li>
-<li>弹出一些项目的提示信息（Tool tips）</li>
-<li>直接读取已加载生效的xxxFramebuffer kext的数据</li>
-<li>文件 ▸ 打开通过 Debug 版本的 <code>WhatEverGreen.kext</code> 的 <code>-igfxdump</code> 引导标志生成的缓冲帧文件</li>
-<li>文件 ▸ 导出 ▸ Clover Config.plist 并对现有 Config.plist 进行无损打补丁</li>
-<li>文件 ▸ 导出 ▸ Framebuffer.txt （缓冲帧文本形式）</li>
-<li>修补音频 Layout ID</li>
-<li>字符串转换与进制转换</li>
-<li>读取 Clover 开机日志，Lilu（Debug）日志，Lilu（Debug）内核日志，Whatevergreen (Debug) 内核日志，AppleALC (Debug) 内核日志</li>
-<li>显示硬盘分区图的详细信息</li>
-<li>读取 Lilu，Whatevergreen，AppleALC，USBInjectAll 的安装信息</li>
-<li>添加 NVRAM 的内核引导标识符</li>
-<li>装载/卸载 EFI 分区</li>
-<li>添加 USB 端口限制补丁</li>
-<li>添加 DSDT 重命名</li>
-<li>定制 USB</li>
-<li>高级修补选项（DVMT-prealloc 32 MB ，显存 2048 MB，禁用 eGPU，启用HDMI20（4K），仿冒声卡 ID，将 DP 映射到 HDMI，USB端口限制，FB端口限制，修复热插拔重启，注入设备 ID 等）</li>
-</ul>
-<p><strong>两个开味小菜：</strong></p>
-<ul>
-<li>声卡修补</li>
-<li>显示器 EDID 修补</li>
-</ul>
-<h2 id="声卡修补">声卡修补</h2>
-<ol>
-<li>安装最新的 <a href="https://github.com/acidanthera/Lilu/releases">Lilu</a> + <a href="https://github.com/acidanthera/AppleALC/releases">AppleALC</a></li>
-<li><a href="https://mackie100projects.altervista.org/download-clover-configurator/">Clover Configurator</a> 设置 config.plist ▸ Devices ▸ Audio ▸ Inject ▸ <code>No</code></li>
-<li>四叶草 (Clover) ▸ DSDT 重命名（如果需要）
-<ul>
-<li>☑️ AZAL ▸ HDEF</li>
-<li>☑️ HDAS ▸ HDEF</li>
-</ul>
-</li>
-<li>选中 补丁 ▸ 通用 ▸ 声音</li>
-<li>设置 Layout ID下拉列表，选择或输入合适你的 Layout ID</li>
-<li>文件 ▸ 导出 ▸ Clover Config.plist（覆盖现有的config.plist文件）</li>
-<li>重新启动</li>
-<li>如果没有音频依然存在问题，请返回步骤4并尝试不同的 Layout ID 注意：如果您尝试所有 Layout ID 但仍有问题，请尝试设置 补丁 ▸ 高级 ▸ 仿冒声卡 ID 选项。 如果这依然不起作用，那么尝试安装<a href="https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/">FakePCIID.kext</a> + <a href="https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/">FakePCIID_Intel_HDMI_Audio.kext</a></li>
-</ol>
-<p><a href="./Xxx _ 科技机场_files/AudioPatch.png"><img src="./Xxx _ 科技机场_files/AudioPatch.png" alt="AudioPatch"></a></p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/AudioPatch2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="AudioPatch2"></a></p>
-<h2 id="显示器-edid-修补">显示器 EDID 修补</h2>
-<p><strong>通过对EDID的修补，您可以修改显示器样式并添加缩放分辨率。</strong></p>
-<ol>
-<li>从显示器列表中，选择您要编辑的显示器。</li>
-<li>（可选）添加/修复监视器范围（如果您的EDID没有它们或它们是坏的）。</li>
-<li>（可选）通过单击“添加”，然后通过单击这些值并进行编辑，可以选择添加缩放分辨率。选择后，可以通过“删除”按钮删除输入的分辨率。</li>
-<li>单击“导出”按钮会在桌面上生成用于修补的替代文件</li>
-</ol>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Display1.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Display"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Display2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Display2"></a></p>
-<h3 id="安装">安装</h3>
-<p>安装EDID补丁有两种方法：1.显示覆盖 2.扩展库(L/E) <strong>请二选一</strong></p>
-<p><strong>1.显示覆盖 (Display Overrides):</strong></p>
-<ul>
-<li>将 <code>DisplayVendorID-x</code> 文件夹复制到 <code>/System/Library/Displays/Contents/Resources/Overrides</code> (或者 <code>/System/Library/Displays/Overrides</code> El Capitan 及以前版本)</li>
-<li>将 <code>Icons.plist</code> 复制到 <code>/System/Library/Displays/Contents/Resources/Overrides</code> (或者 <code>/System/Library/Displays/Overrides</code> El Capitan 及以前版本)</li>
-</ul>
-<p><strong>2.扩展库 (Library Extensions):</strong></p>
-<ul>
-<li>将 <code>DisplayEDID-x-x.kext</code> 复制到 <code>/Library/Extensions</code> 或者 <code>EFI/Clover/kexts/Other</code> (取决于您的配置，建议使用 <code>Clover</code> 的方法)</li>
-</ul>
-<p><strong>系统完整性保护 (SIP)</strong></p>
-<p>您需要禁用SIP <code>(sudo spctl --master-disable)</code> 才能将文件复制到方法1所述位置。</p>
-<h3 id="额外信息">额外信息</h3>
-<p>如果您有16:10的显示器并想使用缩放分辨率，您可以使用：</p>
-<ul>
-<li>iMac 显示器</li>
-<li>MacBook Pro 显示器</li>
-<li>Cinema HD 显示器</li>
-<li>LED Cinema 显示器</li>
-</ul>
-<p>对于16：9显示器和缩放分辨率，您可以使用：</p>
-<ul>
-<li>Apple Thunderbolt 显示器 (不要用于内建显示器！！！)</li>
-<li>iMac Retina 显示器</li>
-<li>MacBook Air 显示器</li>
-</ul>
-<h2 id="工具栏">工具栏</h2>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/Tools.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Tools"></a></p>
-<ol>
-<li>从 AppleIntelInfo.kext 中获取 CPU 的详细信息
-<ul>
-<li>注意！使用完这个功能后需要重启来还原 CPU 的状态！</li>
-</ul>
-</li>
-<li>从 macOS 10.14 开始，苹果删除了 高通 AR92XX/93XX 的驱动，点击这里可以一键安装</li>
-<li>安装驱动以在 macOS 10.14 上启用 SATA 热插拔</li>
-<li>生成 Windows 蓝牙注册表文件</li>
-<li>生成 Windows UTC 时间同步注册表文件
-<ul>
-<li>不推荐，建议更改 macOS 内时区来同步时间</li>
-</ul>
-</li>
-<li>导出 DSDT
-<ul>
-<li>用于导出现在系统使用的 ACPI 表，用于查看 Clover 重命名效果，TgBridge 错误，提取白苹果 ACPI 表等等</li>
-<li><strong>强烈不推荐用于提取原始 ACPI 表，请绕路 Clover F4</strong></li>
-</ul>
-</li>
-<li>安装驱动
-<ul>
-<li>安装下载好的 Kext 到 <code>Library/Extensions</code> (俗称 L/E)</li>
-</ul>
-</li>
-<li>重建缓存并修复权限
-<ul>
-<li>安装完驱动必须点击执行</li>
-</ul>
-</li>
-</ol>
-<h2 id="定制usb">定制USB</h2>
-<p>macOS 10.14.1+ 的USB端口限制补丁已经失效了，因此无法一次配置所有端口。 <a href="https://github.com/RehabMan">RehabMan</a> 已更新 <code>USBInjectAll.kext</code> 并已包含用于排除端口组的引导标志。</p>
-<ol>
-<li>
-<p>将 <code>USBInjectAll.kext</code> (用于端口发现) 放入 <code>EFI/CLOVER/kexts/Other</code></p>
-</li>
-<li>
-<p>Clover ▸ DSDT 重命名 (如果需要)</p>
-<ul>
-<li>☑️ XHC1 ▸ XHC</li>
-<li>☑️ EHC1 ▸ EH01</li>
-<li>☑️ EHC2 ▸ EH02</li>
-</ul>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBPatch.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBPatch"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBPatch2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBPatch2"></a></p>
-</li>
-<li>
-<p>重新启动</p>
-</li>
-<li>
-<p>运行 Hackintool 然后转到 工具栏 ▸ <code>已安装</code> 检查 <code>USBInjectAll</code> 是否安装正确</p>
-<ul>
-<li>如果你看到：<code>USBInjectAll: Yes (Release-0.7.1)</code> 就说明没问题了</li>
-</ul>
-</li>
-<li>
-<p>转到 工具栏 ▸ <code>USB</code> 来查看 USB 控制器列表。因为这里需要基于 USB控制器 您可能需要安装额外的 kexts:</p>
-<ul>
-<li>8086:8CB1 和 macOS (10.11.1) ▸ 请使用 <code>XHCI-9-series.kext</code></li>
-<li>8086:8D31, 8086:A2AF, 8086:A36D, 8086:9DED ▸ <code>请使用 XHCI-unsupported.kext</code></li>
-<li>8086:1E31, 8086:8C31, 8086:8CB1, 8086:8D31, 8086:9C31, 8086:9CB1 ▸ <code>请使用 FakePCIID.kext + FakePCIID_XHCIMux.kext</code></li>
-</ul>
-</li>
-<li>
-<p>如果您缺少了其中一个附加的 kexts，<strong>请完成安装并立即重新启动</strong>，然后再次运行 Hackintool</p>
-</li>
-<li>
-<p>转到 工具栏 ▸ <code>USB</code> 选项</p>
-</li>
-<li>
-<p><strong>依次选择 USB 端口列表中的各个项目，然后单击“删除”删掉全部项目，完成后再单击“刷新”按钮</strong></p>
-</li>
-<li>
-<p>使用 <code>-uia_exclude_ss uia_include=HS01,HS02</code></p>
-<ul>
-<li>这里的 <code>HS01</code> 和 <code>HS02</code> 是鼠标和键盘，请根据<strong>自己的设备位置</strong>对其进行更改</li>
-</ul>
-</li>
-<li>
-<p>运行 Hackintool 并转到 工具栏 ▸ <code>USB</code> 选项</p>
-<ul>
-<li>用一个 USB 2.0 的设备将所有的2.0端口（通常为黑色）全部插拔一遍</li>
-<li>活动的端口将以<code>绿色</code>突出显示
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOrigin.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOrigin"></a></li>
-</ul>
-</li>
-<li>
-<p>删除所有<strong>未</strong>突出显示为绿色的端口，请您也用小本将活动端口的数据记下来，以防万一</p>
-</li>
-<li>
-<p>删除 <code>-uia_exclude_ss</code> 引导标志，并使用 <code>-uia_exclude_hs</code> 引导标志重新启动</p>
-</li>
-<li>
-<p>运行 Hackintool 并转到工具栏 ▸ <code>USB</code> 选项</p>
-<ul>
-<li>用 USB 3.0 的设备将所有的3.0端口（蓝色/红色/黄色）全部插拔一遍</li>
-<li>USB Type-C 接口的设备需要用<strong>正反两面</strong>对所有的端口进行插拔</li>
-<li>活动的端口将以绿色突出显示</li>
-</ul>
-</li>
-<li>
-<p>删除所有未突出显示为绿色的端口，请您也用小本将活动端口的数据记下来，以防万一
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBDEL.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBDEL"></a></p>
-</li>
-<li>
-<p>使用下拉列表将每个端口设置为适当的接口类型</p>
-<ul>
-<li>永久连接设备的USB端口（例如M.2蓝牙卡）应设置为 <code>Internal</code> (内建)</li>
-<li>与 USB3 端口相连的 HSxx 端口 (USB2) 应设置为 <code>USB3</code></li>
-<li>内部集线器通常连接到端口PR11和PR21，因此应设置为 <code>Internal</code> (内建)</li>
-<li>USB Type-C 接口可以是9或10，这取决于硬件如何处理 USB Type-C 型设备/电缆的<strong>正反两种可能方向</strong></li>
-<li>如果 USB Type-C 在两个方向上使用相同的 SSxx，则它具有内建切换器，因此应设置为 <code>TypeC+Sw</code></li>
-<li>如果 USB Type-C 在两个方向使用不同的 SSxx，则它没有内建切换器，因此应设置为 <code>TypeC</code></li>
-</ul>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBTest.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBTest"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBFinal.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBFinal"></a></p>
-</li>
-<li>
-<p>使用 <code>导出</code> 按钮在桌面上生成 USB 修复文件</p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOutput.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOutput"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/USBOutput2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="USBOutput2"></a></p>
-<ul>
-<li>
-<p>复制 <code>SSDT-EC.aml</code> (如果有) 到 EFI ▸ CLOVER ▸ ACPI ▸ patched</p>
-</li>
-<li>
-<p>接下来的方案请</p>
-<p>2 选 1</p>
-<p>:</p>
-<ul>
-<li>A) 复制 USBPorts.kext 到 EFI ▸ CLOVER ▸ kexts ▸ Other；或者</li>
-<li>B) 复制 SSDT-UIAC.aml 和 SSDT-USBX.aml (如果有) 到 EFI ▸ CLOVER ▸ ACPI ▸ patched</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>好了，是时候清除不需要的补丁和文件了:</p>
-<ul>
-<li>删除 (<code>-uia_exclude_ss</code>，<code>-uia_exclude_hs</code> 和 <code>uia_include=x</code>)</li>
-<li>删除 <code>USBInjectAll.kext</code> （<strong>如果您使用的是 USB-Ports</strong>）</li>
-</ul>
-</li>
-<li>
-<p>重启</p>
-</li>
-<li>
-<p>运行 Hackintool 然后转到 工具栏 ▸ <code>USB</code></p>
-</li>
-<li>
-<p>依次选择 USB 端口列表中的各个项目，然后单击“删除”删掉全部项目，完成后再单击“刷新”按钮</p>
-<ul>
-<li>您现在可以检查你的 USB 是否全部正常工作</li>
-<li>如果您要更改USB端口类型，请在更改后重新生成修复文件并替换之前的文件</li>
-<li>如果您一不小心删了修补文件，请重新从头来过，或者您可以用您的小本 ⊙﹏⊙∥∣°</li>
-</ul>
-</li>
-</ol>
-<p><strong>FAQ</strong>
-Q. 什么是 <code>USBPorts.kext</code> ?
-A. 它是一个 无代码的核心驱动 用于注入 USB 端口，让所有的USB端口都能正常工作</p>
-<p>Q. 我还需要在使用USBPorts.kext 的同时使用 <code>SSDT-UIAC.aml</code> 吗？
-A. 不，这个方法生成的是一个空壳的无代码的kext驱动，无需同时使用 <code>SSDT-UIAC.aml</code></p>
-<h3 id="usb定制视频教程">USB定制视频教程</h3>
-<!-- raw HTML omitted -->
-<h2 id="核心功能给缓冲帧打补丁">核心功能：给缓冲帧打补丁</h2>
-<p>随着<code>macOS Mojave</code>的发行，之前的通过<code>Clover</code> ▸ <code>KextsToPatch</code> 通过修补帧缓冲的方法已经失效了，尤其是 <code>SkyLake</code> 及以后架构。您现在必须使用 <code>Lilu</code> + <code>WhateverGreen</code>+<code>FB Patcher</code> 的方式来驱动您的显卡。</p>
-<h3 id="初步动作">初步动作</h3>
-<ul>
-<li>删除 <code>FakePCIID</code>，<code>IntelGraphicsFixup</code>，<code>NvidiaGraphicsFixup</code>,<code>Shiki</code> 和 <code>CoreDisplayFixup</code></li>
-<li>关闭 <code>Clover</code> 里面关于 <code>Graphics</code> 注入的参数，这些参数包括：
-<ul>
-<li>config.plist ▸ Graphics ▸ 🔲 Inject ATI</li>
-<li>config.plist ▸ Graphics ▸ 🔲 Inject Intel</li>
-<li>config.plist ▸ Graphics ▸ 🔲 Inject NVidia</li>
-<li>config.plist ▸ Graphics ▸ ig-platform-id= <code>清空</code></li>
-<li>config.plist ▸ Devices ▸ FakeID ▸ IntelGFX= <code>清空</code></li>
-</ul>
-</li>
-<li>关闭 <code>Clover</code> 里面关于<code>Acpi</code> ▸ <code>DSDT</code> 的修复：
-<ul>
-<li>🔲 <code>AddHDMI</code></li>
-<li>🔲 <code>FixDisplay</code></li>
-<li>🔲 <code>FixIntelGfx</code></li>
-<li>🔲 <code>AddIMEI</code></li>
-</ul>
-</li>
-<li><code>Devices</code> 禁用 <code>UseIntelHDMI</code></li>
-<li>移除 <code>boot argument</code> 参数：<code>-disablegfxfirmware</code></li>
-<li>移除 <code>IGPU</code> 和 <code>HDMI</code> 部分的全部内容，包括：
-<ul>
-<li>config.plist ▸ Devices ▸ Arbitrary</li>
-<li>config.plist ▸ Devices ▸ Properties</li>
-<li>config.plist ▸ Devices ▸ AddProperties</li>
-</ul>
-</li>
-<li>从以下位置删除任何与 <code>IGPU</code> 和 <code>HDMI</code> 相关的 <code>SSDT</code> 和 <code>DSDT</code> ：
-<ul>
-<li>Clover ▸ ACPI ▸ patched</li>
-</ul>
-</li>
-</ul>
-<h3 id="使用方法">使用方法</h3>
-<ol>
-<li>
-<p>打开应用：<code>Hackintool.app</code></p>
-</li>
-<li>
-<p>通过菜单项：<code>缓冲帧</code>选择 <code>macOS 10.13.6</code> / <code>macOS 10.14</code><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-Select.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-Select"></a></p>
-</li>
-<li>
-<p>选择显卡对应的处理器架构，比如</p>
-<ul>
-<li><code>Intel UHD Graphics 630</code>就需要选择<code>Coffee Lake</code></li>
-<li><code>Intel HD Graphics 620</code>就需要选择<code>Kaby Lake</code></li>
-<li><code>Intel HD Graphics 520</code>就需要选择<code>Skylake</code>，等等，</li>
-</ul>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-1.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-1"></a></p>
-<p>之后选择<code>平台 ID</code>，这个就是能正确驱动你的显卡的 ID，至于这个 ID 如何确定，请参考<a href="https://blog.daliansky.net/Intel-core-display-platformID-finishing.html">黑苹果必备：Intel核显platform ID整理及smbios速查表</a> 并针对白苹果所使用的 ID 选取适合您的 <code>平台 ID</code>。</p>
-<p>如果您想了解更多信息，请阅读<a href="https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/">针对 Whatevergreen 的缓冲帧修补教程（英文）</a>。中文版：<a href="https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html">Coffee Lake帧缓冲区补丁及UHD630 Coffee Lake ig-platform-id数据整理</a> 和 <a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">教程：利用Hackintool打开第8代核显HDMI输出的正确姿势</a></p>
-</li>
-<li>
-<p>点击<code>应用补丁</code>按钮，在<code>通用</code>选项中勾选<code>设备/属性</code>，<code>自动侦测变化</code>，<code>全部</code>，<code>接口</code>，<code>显存</code>这几个选项；</p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-2.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-2"></a></p>
-</li>
-<li>
-<p>在<code>高级</code>选项中勾选<code>DVMT pre-alloc 32 MB</code>，<code>显存 2048MB</code>，<code>禁用 eGPU</code>，<code>启用 HDMI20(4K)</code>，<code>将 DP 映射到 HDMI</code>，<code>FB 端口数限制</code></p>
-</li>
-<li>
-<p>勾选<code>设备</code>，选择<code>平台 ID</code> <strong>相对应的</strong> <code>设备 ID</code>，这通常跟你的显卡名称相吻合</p>
-</li>
-<li>
-<p>点击<code>生成补丁</code>生成显卡驱动补丁</p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-3.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-3"></a></p>
-</li>
-<li>
-<p>通过菜单项：<code>文件</code> ▸ <code>导出</code> ▸ <code>Config.plist</code>，将该补丁无损注入到 Clover 的配置文件 Config.plist 中</p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/FB-4.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="FB-4"></a></p>
-</li>
-</ol>
-<h3 id="几个例子请您举一反三httpsgithubcomacidantherawhatevergreenblobmastermanualfaqintelhdcnmde4bdbfe794a8-weg-e887aae5ae9ae4b989-fb-e5928c-e7abafe58fa3-e8a1a5e4b881">几个例子：<a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md#%E4%BD%BF%E7%94%A8-weg-%E8%87%AA%E5%AE%9A%E4%B9%89-fb-%E5%92%8C-%E7%AB%AF%E5%8F%A3-%E8%A1%A5%E4%B8%81">（请您举一反三）</a></h3>
-<ul>
-<li>
-<p>Coffee Lake（八代）平台：Intel UHD Graphics 630 (移动端)</p>
-<p><a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-A.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-A"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-B.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-B"></a>
-<a href="http://7.daliansky.net/Hackintool-Screen-Shot-for-blog/3E9B-C.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="3E9B-C"></a></p>
-</li>
-<li>
-<p>Kabe Lake（七代）平台：Intel HD Graphics 620 / Intel UHD Graphics 620 (移动端)</p>
-<ul>
-<li>CPU 架构：Kaby Lake</li>
-<li>平台 ID：<code>0x59160000</code></li>
-<li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
-<li>仿冒图形卡 ID 选择：<code>0x5916: Intel Graphics 620</code></li>
-</ul>
-</li>
-<li>
-<p>Sky Lake（六代）平台：Intel HD Graphics 530 (移动端)</p>
-<ul>
-<li>CPU 架构：Skylake</li>
-<li>平台 ID：<code>0x191B0000</code></li>
-<li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
-<li>仿冒图形卡 ID 选择：<code>0x191B: Intel Graphics 530</code></li>
-</ul>
-</li>
-<li>
-<p>Haswell（四代）平台：Intel HD Graphics 4600 (移动端)</p>
-<ul>
-<li>CPU 架构：Haswell</li>
-<li>平台 ID：<code>0x0A260006</code></li>
-<li><strong>通用</strong>和<strong>高级</strong>界面同上勾选</li>
-<li>仿冒图形卡 ID 选择：<code>0x0A26: Intel Graphics 4600</code></li>
-</ul>
-</li>
-<li>
-<p><strong>注意⚠️：以上设置仅为较为通用的设置，对于某些设备，可能存在疏漏或者冗余</strong></p>
-<ul>
-<li><a href="https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md#%E4%BD%BF%E7%94%A8-weg-%E8%87%AA%E5%AE%9A%E4%B9%89-fb-%E5%92%8C-%E7%AB%AF%E5%8F%A3-%E8%A1%A5%E4%B8%81">查看此处</a>来利用 Hackintool 深度定制 Whatevergreen 补丁</li>
-</ul>
-</li>
-</ul>
-<p><strong>最后通过菜单项：文件 ▸ 导出 ▸ Config.plist，将该补丁导出到 Clover 的配置文件</strong></p>
-<h3 id="各种主板补丁示例集合">各种主板补丁示例集合</h3>
-<p>从<code>Hackintool</code> v2.0.6开始，内部集成了国外论坛的成员提交的缓冲帧补丁示例的集合，现在只需要轻松几步就能生成写好的补丁，源文件请<a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">参考</a></p>
-<ol>
-<li>
-<p>运行<strong>Hackintool</strong>。从顶部菜单栏中选择<strong>缓冲帧</strong>并选择<strong>macOS 10.14</strong>。</p>
-<p><a href="./Xxx _ 科技机场_files/FB-Select.png"><img src="./Xxx _ 科技机场_files/FB-Select.png" alt="Hackintool  - 选择Framebuffer.png"></a></p>
-</li>
-<li>
-<p>从<strong>应用补丁</strong>菜单中，选择<strong>应用当前补丁</strong>，可看到其前面打钩的是正确的状态。</p>
-<p><a href="./Xxx _ 科技机场_files/FB-Patch.png"><img src="./Xxx _ 科技机场_files/FB-Patch.png" alt="Hackintool  -  Patch Menu.png"></a>
-<a href="http://7.daliansky.net/Connectors-screen-shot/Connectors-Before-Patch.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Hackintool  -  Connectors-Before-Patch.png"></a></p>
-</li>
-<li>
-<p>在菜单栏 -&gt; 应用补丁 -&gt; 主板接口 中选择你的主板（如果没有，请按照上文的方法手动创建补丁）</p>
-<p><a href="http://7.daliansky.net/Connectors-screen-shot/Connector-Patches.png"><img src="./Xxx _ 科技机场_files/loading.gif" alt="Hackintool  -  Connector-Patches.png"></a>
-<a href="./Xxx _ 科技机场_files/Connectors-After-Patch.png"><img src="./Xxx _ 科技机场_files/Connectors-After-Patch.png" alt="Hackintool  -  Connectors-After-Patch.png"></a></p>
-</li>
-</ol>
-<h3 id="fb视频教程">FB视频教程</h3>
-<!-- raw HTML omitted -->
-<h2 id="更新日志">更新日志</h2>
-<p>2.4.6 - ”重建缓存并修复权限“ 被移到了工具栏并增加了进度条</p>
-<p>2.4.5 - 为 ”重建缓存并修复权限“ 增加了输出信息</p>
-<p>2.4.4 - 更新中文语言包，改进编译器</p>
-<p>2.4.3 - 更新中文语言包，修复 USB 配置</p>
-<p>2.4.2 - 更改缓冲帧信息显示方式（选中 / 当前）</p>
-<p>2.4.1 - 更新中文语言包</p>
-<p>2.4.0 - 现在包含了 iMessageDebug 信息 (ElNono / mdmwii / flux84 / sugarface / pokenguyen)。导出系统信息。查看型号信息 (<a href="http://everymac.com/">everymac.com</a>)。 检查序列号。初步的 OpenCore 支持 (感谢 vit9696)</p>
-<p>2.3.9 - ComboBox 修复 (感谢 telepati)</p>
-<p>2.3.8 - 修复错误 (感谢 ReddestDream)</p>
-<p>2.3.7 - 改进了 Clover EFI 装载。Clover PCI导 出现在使用 SubClass 作为 device_type</p>
-<p>2.3.6 - 修复错误。 添加了 “使用 Intel HDMI” 选项（hda-gfx = onboard-x）。添加了 “不缩放” 的分辨率类型</p>
-<p>2.3.5 - 修复了设备路径生成器（gfxutil）中的错误。 添加了 “生成 Windows UTC 注册表文件” 工具</p>
-<p>2.3.4 - 更新了 Codec，以 Clover 和 dsl 格式导出 PCI 列表，现在转储所有 ACPI 表并反编译为 dsl</p>
-<p>2.3.3 - 提取 DSDT（phpdev32），自动更新 PCIID（MuntashirAkon），以 JSON 格式导出 PCI 列表</p>
-<p>2.3.2 - 监控 PCI 热插拔</p>
-<p>2.3.1 - UI 更新</p>
-<p>2.3.1 - 右键单击 PCI 设备，然后选择 “复制 IOReg 路径”。 启动 IORegistryExplorer 并选择 Go-&gt; Go to Path… 菜单，粘贴路径并单击 “Go to Path” 按钮。</p>
-<p>2.2.8 - 添加了 HWP 状态日志记录警告（以前的状态只能在重启后恢复）</p>
-<p>2.2.7 - 添加了 VDA 解码器状态。 为 PCI 设备添加了 DevicePath。 将 PCI 设备列表导出到桌面</p>
-<p>2.2.6 - 改进了引导 EFI 检测。 手动设置引导 EFI。 AppleIntelInfo 显示 30 秒计时器以记录 CStates。 记录后恢复 HWP 状态。添加了英特尔注册警告。计算器现在显示反向字节</p>
-<p>2.2.4 - 添加了 AppleIntelInfo 的选项（启用 HWP，日志：CStates 低压模式，英特尔核显，IPG 类型，英特尔注册表， MSRs），添加了 20 秒的等待时间来让 AppleIntelInfo 获取 CState 低压模式信息。</p>
-<p>2.2.2 - 添加了信息栏（网络接口，图形卡，声卡设备和储存设备）。 现在会以绿色或红色高亮电源设置来表明问题所在</p>
-<p>2.2.1 - 修复错误</p>
-<p>2.2.0 - 新的 <code>PCI 设备</code>，<code>网络</code>，<code>电源</code> 和 <code>工具</code> 栏</p>
-<p>2.1.9 - 添加了来自 Github 的驱动下载源。下载得到的版本可能会比源代码版本老。而且由于 Github 的 API 限制, 它只会储存最新的下载链接。添加了安装 kext(s) 的功能。添加了重建驱动缓存和修复权限的功能。</p>
-<p>2.1.8 - 使用 <code>kextstat</code> 来获取版本</p>
-<p>2.1.7 - 现在可以侦测更多 kexts</p>
-<p>2.1.6 - 现在可以下载当前版本的 Lilu 和其 插件</p>
-<p>2.0.8 - 在 应用补丁 -&gt; 8代核显HDMI/DVI 菜单中添加了几个配置文件，你可以尝试如果你的 8 代系统有问题 (CaseySJ)</p>
-<p>2.0.4 - 应用 Clover 补丁（KernelToPatch，KextToPatch，DSDT 重命名）。 查看，创建和编辑 NVRAM 变量（小心！）。 查看已安装的 Lilu 及其插件，下载并自动编译最新版本</p>
-<p>2.0.0 - 支持简体中文</p>
-<p>1.9.6 - 增加磁盘功能（图标 / 装载 / 卸载按钮）</p>
-<p>1.9.2 - 修复错误</p>
-<p>1.9.1 - 添加了 SSDT-UIAC.aml / SSDT-USBX.aml 的导出支持</p>
-<p>1.9.0 - 修复启动错误（感谢 @Pavo）</p>
-<p>1.8.7 - 添加了 USB 电源方面的 DSDT 重命名</p>
-<p>1.8.6 - 添加了 DSDT 重命名</p>
-<p>1.8.5 - 修复错误</p>
-<p>1.8.4 - 使用 Sparkle 框架进行自动更新</p>
-<p>1.8.3 - 改进了音频设备侦测 / 选择，窗体现在可以调整大小</p>
-<p>1.8.2 - 添加语言支持 法语 (Matgen84)，德语 (al6042)，韩语 (zisqo)，俄语 / 乌克兰语 (ctich)</p>
-<p>1.8.1 - 添加了 Clover 下载器 (Kozlek / JrCs / slice)，NVRAM 引导标识符编辑，改进授权，更新界面</p>
-<p>1.8.0 - 改进了 USB 电源导出 (corpnewt)，其他修复，新图标</p>
-<p>1.7.9 - 添加了 USB 电源导出, EFI 分区装载, 计算器和日志查看器</p>
-<p>1.7.8 - 添加了分辨率注入（来自底噪的一键 Hidpi）</p>
-<p>1.7.7 - 添加了 AMD 和 nVidia 的 EDID 补丁支持</p>
-<p>1.7.6 - EDID 覆盖现可支持自定义图标</p>
-<p>1.7.5 - 改进了 USB 教程, 添加了打印按钮</p>
-<p>1.7.4 - 修复了默认选中项</p>
-<p>1.7.3 - 更新</p>
-<p>1.7.2 - 将软件更名为 Hackintool，添加了 EDID 注入支持 (Andy Vandijck)</p>
-<p>1.7.1 - 修复暗黑模式</p>
-<p>1.7.0 - 添加了 USB 和 声卡信息，现在会显示可用的仿冒 ID 和需要的 kext</p>
-<p>1.6.9 - 更新</p>
-<p>1.6.8 - 添加了 framebuffer-camellia 和 framebuffer-flags 的补丁支持</p>
-<p>1.6.7 - 添加了 Macmini8,1 和 MacBookAir8,1 的信息</p>
-<p>1.6.6 - 更新了信息文件</p>
-<p>1.6.5 - 修复了 USBInjectAll 的侦测</p>
-<p>1.6.4 - 改进了声卡 layout id 的侦测</p>
-<p>1.6.3 - 现在会显示声卡控制器</p>
-<p>1.6.2 - 修复 USB</p>
-<p>1.6.1 - 改进了仿冒声卡设备 Id 的选项</p>
-<p>1.6.0 - 修复错误</p>
-<p>1.5.9 - 现在会显示 USB 控制器</p>
-<p>1.5.8 - 将在应用程序会话之间存储和恢复 USB 端口，以便与新的 USBInjectAll.kext（0.7.0）一起使用，以便包括用于排除端口组的引导标识符</p>
-<p>1.5.7 - 现在可以检测 EHC 和集线器端口（感谢 RehabMan 和 SavageAUS）。 可多选 USB 端口。 现在可以检测是否安装了 USBInjectAll</p>
-<p>1.5.4 - 修复当用户有多个音频设备时的 Codec 检测。 在高级补丁栏中添加了 “修复重启” 补丁（将连接器通道值设置为18）</p>
-<p>1.5.3 - 改进了 导出 -&gt; Clover config.plist 的功能，现在会自动备份生成 (config-backup.plist)</p>
-<p>1.5.2 - 添加了 应用补丁 -&gt; AzulPatcher4600</p>
-<p>1.5.1 - 修复了 USBPorts 的接口数统计</p>
-<p>1.5.0 - 修复错误</p>
-<p>1.4.9 - 添加了一个工具栏来显示 Lilu，WhateverGreen 和 AppleALC 安装状态和版本信息</p>
-<p>1.4.8 - 修复了为 iasl 的 DSL 源补丁输出 framebuffer-cursormem</p>
-<p>1.4.7 - 支持了新版 WEG 的 -igfxfbdump 引导标识符，使用 文件 -&gt; 导入 -&gt; IOReg 输出 菜单</p>
-<p>1.4.6 - 修复错误。 添加了 缓冲帧 -&gt; macOS 10.14 菜单项。添加了 QE/CI 和 Metal 支持的侦测</p>
-<p>1.4.5 - 支持了 framebuffer-cursormem (Haswell)</p>
-<p>1.4.4 - 修复了注入适当 device-id 的功能</p>
-<p>1.4.3 - 修复错误</p>
-<p>1.4.2 - 添加了 应用补丁 -&gt; 导入 KextsToPatch / 应用当前补 菜单，将 USBPower.kext 重命名为 USBPorts.kext</p>
-<p>1.4.1 - 添加了 TypeC USB 端口</p>
-<p>1.4.0 - 改进了 Intel 架构检测</p>
-<p>1.3.9 - 现在使用 AppleIntelFramebuffer @X 索引来进行接口关联</p>
-<p>1.3.8 - 修复了 AppleIntelFramebuffer 接口数字在内建时应该为索引号 + 4 或者 0 的 Bug (RehabMan)</p>
-<p>1.3.7 - 显示连接器端口上已连接显示器的显示信息（支持显示器热插拔），修复 iASL DSL 源十六进制输出，接口可以拖放以更改顺序</p>
-<p>1.3.6 - 修复错误</p>
-<p>1.3.5 - 现在会尝试 HDAS 如果没有找到 HDEF</p>
-<p>1.3.4 - Added AllData connector patch method (RehabMan). 现在会尝试 GFX0 如果没有找到 IGPU</p>
-<p>1.3.3 - 修复错误。添加了更多的 Layout ID (vandroiy2013)</p>
-<p>1.3.2 - 修复错误</p>
-<p>1.3.1 - 修复错误。添加了新的菜单 缓冲帧 -&gt; 当前版本 / macOS 10.13.6</p>
-<p>1.3.0 - 添加了声卡补丁，Clover config.plist 导出，USB 补丁，高级自动补丁</p>
-<p>1.2.8 - 添加了iASL DSL 的源补丁输出，显示检测到的 Intel 架构和 平台 id</p>
-<p>1.2.7 - 文件 -&gt; 导出 缓冲帧文本形式</p>
-<p>1.2.6 - 修复了预分配显存的计算公式 (vit9696)</p>
-<p>1.2.5 - 依然会在 “自动侦测变化” 勾选时导出一个 config.plist/Devices/Properties 补丁</p>
-<p>1.2.4 - 修复错误</p>
-<p>1.2.3 - config.plist/Devices/Properties 补丁现在会输出数据形式</p>
-<p>1.2.2 - 修复错误</p>
-<p>1.2.1 - 更新和错误修复</p>
-<p>1.2.0 - 为 Cannon Lake 和 Ice Lake 添加支持</p>
-<p>1.1.0 - 添加了机型 MacBookPro15,1 和 MacBookPro15,2</p>
-<p>1.0.9 - 支持 Mojave，Coffee Lake，WhateverGreen 的 -igfxdump 引导标识符和 Clover 的 config.plist/Devices/Properties 补丁输出</p>
-<p>1.0.8 - 更新</p>
-<p>1.0.7 - 修复暗黑模式支持</p>
-<p>1.0.6 - 更好地兼容之前的版本</p>
-<p>1.0.5 - 在启动时检测芯片组和地址, 可以更加容易地修显存值</p>
-<p>1.0.4 - 添加了 GPU / 型号信息</p>
-<p>1.0.3 - 添加了工具提示</p>
-<p>1.0.2 - 添加了显存栏</p>
-<p>1.0.1 - 小修补</p>
-<p>1.0.0 - 最初发布</p>
-<h2 id="下载链接">下载链接</h2>
-<p><a href="http://headsoft.com.au/download/mac/Hackintool.zip">下载 Hackintool</a></p>
-<p><a href="http://headsoft.com.au/download/mac/FBPatcher.zip">下载 FBPatcher V1.7.1</a> 历史版本</p>
-<h2 id="扩展阅读">扩展阅读</h2>
-<p><a href="https://blog.daliansky.net/Intel-core-display-platformID-finishing.html">黑苹果必备：Intel核显platform ID整理及smbios速查表</a></p>
-<p><a href="https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html">macOS High Sierra 10.13.6(17G2112)/Mojave ig-platform-id数据整理</a></p>
-<p><a href="https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html">教程：利用Hackintool打开第8代核显HDMI/DVI输出的正确姿势</a></p>
-
-    </div>
-
-    <div class="post-copyright">
-             
-            <p class="copyright-item">
-                <span>Author:</span>
-                <span>Covey.机场 </span>
-                </p>
-            
-           
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href="http://localhost:1313/posts/xxx/">http://localhost:1313/posts/xxx/
-            </a></p><a href="http://localhost:1313/posts/xxx/">
-            
-            
-    </a></div><a href="http://localhost:1313/posts/xxx/">
-
-  
-    </a><div class="post-tags"><a href="http://localhost:1313/posts/xxx/">
-        
-        </a><section><a href="http://localhost:1313/posts/xxx/">
-                </a><a href="javascript:window.history.back();">back</a> · 
-                <span><a href="http://localhost:1313/">home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav">
-        
-        <a href="http://localhost:1313/posts/creating-a-new-theme/" class="prev" rel="prev" title="Creating a New Theme"><i class="iconfont icon-left"></i>&nbsp;Creating a New Theme</a>
-         
-        
-    </div>
-
-    <div class="post-comment">
-          
-                 
-          
-    </div>
-    <div class="post-comment">
-          
-          
-  
-  <div id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="说点什么吧..."></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;"><pre style="overflow: auto;" class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="typ">Code</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Request</span><span class="pln"> has been terminated</span></li><li class="L1"><span class="typ">Possible</span><span class="pln"> causes</span><span class="pun">:</span><span class="pln"> the network </span><span class="kwd">is</span><span class="pln"> offline</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Origin</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> allowed </span><span class="kwd">by</span><span class="pln"> </span><span class="typ">Access</span><span class="pun">-</span><span class="typ">Control</span><span class="pun">-</span><span class="typ">Allow</span><span class="pun">-</span><span class="typ">Origin</span><span class="pun">,</span><span class="pln"> the page </span><span class="kwd">is</span><span class="pln"> being unloaded</span><span class="pun">,</span><span class="pln"> etc</span><span class="pun">.</span></li></ol></pre></div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org/" target="_blank">Valine</a><br>v1.3.10</div></div></div>
-  <script src="./Xxx _ 科技机场_files/av-min.js.下载"></script>
-  <script src="./Xxx _ 科技机场_files/Valine.min.js.下载"></script>
-
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'Your appId',
-        appKey: 'Your appKey',
-        notify: 'false', 
-        verify: 'false', 
-        avatar:'mm', 
-        placeholder: '说点什么吧...',
-        visitor: 'true'
-    });
-  </script>
-        </div>
-</article>
-          </div>
-		   </main>
-      <footer class="footer">
-    <div class="copyright">
-        ©
-        
-        <span itemprop="copyrightYear">2020 - 2020</span>
-        
-        <span class="with-love">
-    	 <i class="iconfont icon-love"></i> 
-         </span>
-         
-            <span class="author" itemprop="copyrightHolder"><a href="http://localhost:1313/">Covey.机场</a> | </span> 
-         
-
-         
-		  <span>Powered by <a href="https://lyzzy.cc/" target="_blank" rel="external nofollow">科技机场</a></span> 
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-     <link href="./Xxx _ 科技机场_files/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="./Xxx _ 科技机场_files/vendor_gallery.min.js.下载" async=""></script>
-    
-  
-
-
-
-     </div>
-  
-
-<a href="http://localhost:1313/posts/xxx/#" id="dynamic-to-top" style="display: none;"><span>&nbsp;</span></a></body></html>
+</html>
