@@ -1965,7 +1965,7 @@ pre .javascript .function,pre .keyword {
 	border: 0;
 	outline: 0;
 	border-radius: 5px;
-	padding: 0;
+	padding: 0px 0px 3px 0px;
 	margin: 0;
 	letter-spacing: normal;
 	text-transform: none;
@@ -2090,7 +2090,7 @@ pre .javascript .function,pre .keyword {
 .post-copyright {
 	margin: 2em 0 0;
 	padding: .5em 1em;
-	border-left: 3px solid #ff1700;
+	border-left: 3px solid #10519F;
 	background-color: #f9f9f9;
 	list-style: none
 }
@@ -3341,9 +3341,9 @@ code {
 }
 
 .site-meta {
-	background: #000;
-	background: -webkit-linear-gradient(to left,#434343,#000);
-	background: linear-gradient(to left,#434343,#000)
+	background: #acaee9;
+	background: -webkit-linear-gradient(to left,#acaee9,#acaee9);
+	background: linear-gradient(to left,#acaee9,#acaee9)
 }
 
 .brand {
@@ -4081,16 +4081,16 @@ code.description {
 }
 
 .qq-qun {
-	margin: 2em 0 0;
+	/*margin: 2em 0 0;*/
 	padding: .5em 1em;
-	border-left: 3px solid #fc6423;
-	background-color: rgba(239,78,123,.141);
+	border-left: 3px solid #10519F;
+	background-color: rgba(172,174,233,1);
 	list-style: none;
-	box-shadow: 0 0 1px 0 rgba(0,0,0,.71)
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.71)
 }
 
 .post-copyright {
-	box-shadow: 0 0 1px 0 rgba(0,0,0,.71)
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.71)
 }
 
 .comments {
