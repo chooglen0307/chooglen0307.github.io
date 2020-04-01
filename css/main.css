@@ -1224,9 +1224,8 @@ pre .javascript .function,pre .keyword {
 }
 
 .site-meta {
-    width: 960px;
 	margin: 0;
-	text-align: left
+	text-align: center
 }
 
 @media (max-width:767px) {
